@@ -22,7 +22,28 @@ import ethical_hacking from "./img/ethical_hacking.jpeg";
 import programmation from "./img/programmation.jpg";
 import linux from "./img/linux.png";
 
+import {useHistory} from "react-router-dom";
+import {auth} from "../firebase_file";
+import Modal from "./Modal";
+import {useState,useEffect} from "react";
+import Login from "./Login";
+
 const HomeContent=()=>{
+    const history=useHistory();
+    const [open,set_open]=useState(false);
+
+    const close_modal=()=>{
+        set_open(false);
+    }
+    const start=()=>{
+        if(auth.currentUser==null){
+            //login
+            set_open(true);
+        }else{
+            //profile;
+            history.push("/profile");
+        }
+    }
     return(
         <div className="academy_content">
             
@@ -89,7 +110,7 @@ const HomeContent=()=>{
                         </h4>
 
                         <div className="line_start">
-                            <button>Commencez la formation</button>
+                            <button onClick={start}>Commencez la formation</button>
                         </div>
                     </p>
 
@@ -118,7 +139,7 @@ const HomeContent=()=>{
                 </div>
             </div>
             <Footer />
-
+            {open==true && <Modal click={close_modal} content={<Login />} />}
         </div>
     );
 }

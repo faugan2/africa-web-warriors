@@ -12,8 +12,28 @@ import psg from "./img/psg.png";
 import jsql from "./img/jsql.png";
 import foaf from "./img/foaf.png";
 import sici from "./img/sici.jpg";
+import {useHistory} from "react-router-dom";
+import {auth} from "../firebase_file";
+import Modal from "./Modal";
+import {useState,useEffect} from "react";
+import Login from "./Login";
 
 const HomeContent=()=>{
+    const history=useHistory();
+    const [open,set_open]=useState(false);
+
+    const close_modal=()=>{
+        set_open(false);
+    }
+    const start=()=>{
+        if(auth.currentUser==null){
+            //login
+            set_open(true);
+        }else{
+            //profile;
+            history.push("/profile");
+        }
+    }
     return(
         <div className="home_content">
            <div className="top">
@@ -27,7 +47,7 @@ const HomeContent=()=>{
                    </ol>
 
                    <div>
-                       <button>Commencez la formation</button>
+                       <button onClick={start}>Commencez la formation</button>
                    </div>
                </div>
                <div className="right">
@@ -77,7 +97,7 @@ const HomeContent=()=>{
             </div>
 
             <Footer />
-
+            {open==true && <Modal click={close_modal} content={<Login />} />}
         </div>
     );
 }
