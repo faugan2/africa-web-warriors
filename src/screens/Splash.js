@@ -14,6 +14,7 @@ const Splash=()=>{
         dispatch(setLoaded(true))
         auth.onAuthStateChanged((user)=>{
             if(user==null){
+                dispatch(setUser(null));
                 history.push("/home")
             }else{
                 const email=user.email;

@@ -12,6 +12,7 @@ import Login from "./Login";
 import {auth,db} from "../firebase_file";
 import { useSelector } from "react-redux";
 import {selectUser,selectLoaded} from "../features/appSlice";
+import Menu from "./Menu";
 
 const Nav=({index})=>{
     const history=useHistory();
@@ -28,7 +29,6 @@ const Nav=({index})=>{
     },[loaded])
 
     useEffect(()=>{
-        if(user==null) return;
         set_me(user);
     },[user])
 
@@ -67,11 +67,9 @@ const Nav=({index})=>{
                 </button>}
 
                 {
-                    me!=null && 
-                    <button>
-                        <img src={me?.photo} />
-                    </button>
+                    me!=null && <Menu />
                 }
+                
             </div>
 
             {open==true && <Modal click={close_modal} content={<Login />} />}
