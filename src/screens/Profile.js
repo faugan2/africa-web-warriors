@@ -19,12 +19,15 @@ import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import CircularProgress from '@material-ui/core/CircularProgress';
 
 import {auth,db,storage} from "../firebase_file";
+import Modal from "../components/Modal";
+import EditUsername from "../components/EditUsername";
 
 const Profile=()=>{
     const user=useSelector(selectUser);
 
     const [me,set_me]=useState(null);
     const [progress,set_progress]=useState(false);
+    const [open,set_open]=useState(false);
 
     useEffect(()=>{
         set_me(user);
@@ -55,6 +58,10 @@ const Profile=()=>{
             set_progress(false);
         })
     }
+
+    const close_modal=()=>{
+        set_open(false);
+    }
     return(
         <div className="profile">
              <Nav  />
@@ -72,7 +79,9 @@ const Profile=()=>{
                         
                         <div>
                             <p>{me?.username}</p>
-                            <button><EditIcon /></button>
+                            <button onClick={e=>{
+                                set_open(true);
+                            }}><EditIcon /></button>
                         </div>
 
                         {/*<Steps />*/}
@@ -120,6 +129,7 @@ const Profile=()=>{
                 <Footer />
              </div>
              
+             {open==true && <Modal content={<EditUsername click={close_modal} />} click={close_modal} />}
         </div>
     );
 }

@@ -1,0 +1,29 @@
+.edit_username{
+    min-height:100px;
+    min-width: 300px;
+
+    >.line{
+        
+        margin-bottom: 1rem;
+        display:flex;
+        justify-content:center;
+        >input{
+            flex:1;
+            padding:0.5rem;
+            outline:none;
+            border:none;
+            border-bottom: 1px solid black;
+            font-size: 0.8rem;
+            color:black;
+        }
+
+        >button{
+            padding: 0.6rem 1rem;
+            width:150px;
+            background-color:black;
+            color:white;
+            border:none;
+            font-weight: bold;
+        }
+    }
+}
