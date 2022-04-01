@@ -9,11 +9,21 @@ import {useHistory} from "react-router-dom";
 import Modal from "./Modal";
 import {useState,useEffect} from "react";
 import Login from "./Login";
+import {auth,db} from "../firebase_file";
+import { useSelector } from "react-redux";
+import {selectUser} from "../features/appSlice";
 
 const Nav=({index})=>{
     const history=useHistory();
+    const user=useSelector(selectUser);
 
     const [open,set_open]=useState(false);
+    const [me,set_me]=useState(null);
+
+    useEffect(()=>{
+        if(user==null) return;
+        set_me(user);
+    },[user])
 
     const close_modal=()=>{
         set_open(false);
@@ -43,11 +53,18 @@ const Nav=({index})=>{
                 </Link>
             </div>
             <div className="user">
-                <button onClick={e=>{
+                {me==null && <button onClick={e=>{
                     set_open(true);
                 }}>
                     <PermIdentityIcon style={{fontSize:"2.5rem"}} />
-                </button>
+                </button>}
+
+                {
+                    me!=null && 
+                    <button>
+                        <img src={me?.photo} />
+                    </button>
+                }
             </div>
 
             {open==true && <Modal click={close_modal} content={<Login />} />}
