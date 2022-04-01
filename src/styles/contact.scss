@@ -1,0 +1,43 @@
+.contact{
+    
+    display:flex;
+    flex-direction: column;
+    >h3{
+        text-align: center;
+    }
+
+    >.line{
+        
+        margin:1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        >label{
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+        >div{
+            display:flex;
+            align-items: center;
+            border-bottom: 1px solid black;
+            >input,textarea{
+                padding:0.5rem;
+                flex:1;
+                border:none;
+                outline:none;
+                font-size: 0.8rem;
+            }
+
+           
+        }
+
+        >button{
+            width:200px;
+            margin:auto;
+            padding:0.6rem 1rem;
+            background-color:black;
+            color:white;
+            font-weight: bold;
+            border:none;
+        }
+    }
+}

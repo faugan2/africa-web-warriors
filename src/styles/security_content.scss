@@ -1,0 +1,19 @@
+.security_content{
+    position:absolute;
+    top:60px;
+    width:100%;
+    min-height: 100vh;
+    max-height: 100vh;
+
+    >.top{
+        min-height:80vh;
+        width:80%;
+        margin:auto;
+        margin-top: 2rem;
+        display:flex;
+        >div{
+            flex:1;
+        }
+    }
+    
+}

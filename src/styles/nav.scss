@@ -1,0 +1,59 @@
+.nav{
+    
+    display:flex;
+    align-items: center;
+    height:60px;
+    position:fixed;
+    top:0;
+    width:100%;
+    border-bottom: 1px solid silver;
+    z-index: 999;
+    background-color:black;
+    color:white;
+
+    >div{
+        &.logo{
+            margin-left: 2rem;
+            >img{
+                cursor: pointer;
+            }
+        }
+        &.menu{
+            flex:1;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            >a{
+                margin-right: 3rem;
+                text-decoration: none;
+                font-weight: bold;
+                color:white;
+                display:flex;
+                align-items: center;
+                gap:0.5rem;
+                &:hover{
+                    opacity: 0.6;
+                }
+
+                &.active{
+                     color:indianred;
+                }
+            }
+        }
+
+        &.user{
+            margin-right: 2rem;
+            >button{
+                border:none;
+                padding:0.5rem 1rem;
+                background-color: transparent;
+                cursor: pointer;
+                color:whitesmoke;
+            }
+        }
+
+    
+    }
+}
