@@ -18,16 +18,15 @@ const Splash=()=>{
                 history.push("/home")
             }else{
                 const email=user.email;
-                db.collection("users").where("email","==",email).get().then((snap)=>{
+                db.collection("users").where("email","==",email).onSnapshot((snap)=>{
                     const res=snap.docs[0];
                     const data=res.data();
                     const key=res.id;
                     data.key=key;
                     dispatch(setUser(data));
-                    history.push("/home")
-                }).catch((err)=>{
-                    history.push("/home")
-                });
+                   
+                })
+                history.push("/home")
             }
         })
         
