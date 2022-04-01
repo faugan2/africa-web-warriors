@@ -7,10 +7,12 @@ import {selectUser,selectLoaded,setUser} from "../features/appSlice";
 import {useState,useEffect} from "react";
 import "../styles/menu.scss";
 import { auth } from '../firebase_file';
+import {useHistory} from "react-router-dom";
 
 export default function SimpleMenu() {
     const user=useSelector(selectUser);
     const dispatch=useDispatch();
+    const history=useHistory();
 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [me,set_me]=useState(null);
@@ -43,7 +45,9 @@ export default function SimpleMenu() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose}>Profile</MenuItem>
+        <MenuItem onClick={e=>{
+            history.push("/profile");
+        }}>Profile</MenuItem>
         <MenuItem onClick={handleClose}>Tableau de bord</MenuItem>
         <MenuItem onClick={e=>{
             auth.signOut();

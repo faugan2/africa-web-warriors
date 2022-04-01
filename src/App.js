@@ -10,6 +10,7 @@ import Home from "./screens/Home";
 import Academy from "./screens/Academy";
 import Security from "./screens/Security";
 import Software from "./screens/Software";
+import Profile from "./screens/Profile";
 
 function App() {
   return (
@@ -33,6 +34,10 @@ function App() {
 
         <Route path="/softwares" exact>
           <Software />
+        </Route>
+
+        <Route path="/profile" exact>
+          <Profile />
         </Route>
 
       </Switch>
