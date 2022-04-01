@@ -11,14 +11,21 @@ import {useState,useEffect} from "react";
 import Login from "./Login";
 import {auth,db} from "../firebase_file";
 import { useSelector } from "react-redux";
-import {selectUser} from "../features/appSlice";
+import {selectUser,selectLoaded} from "../features/appSlice";
 
 const Nav=({index})=>{
     const history=useHistory();
     const user=useSelector(selectUser);
+    const loaded=useSelector(selectLoaded);
 
     const [open,set_open]=useState(false);
     const [me,set_me]=useState(null);
+
+    useEffect(()=>{
+        if(loaded==false){
+            history.replace("/");
+        }
+    },[loaded])
 
     useEffect(()=>{
         if(user==null) return;

@@ -4,32 +4,34 @@ import { useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import {auth,db} from "../firebase_file";
 import { useDispatch } from "react-redux";
-import {setUser} from "../features/appSlice";
+import {setUser,setLoaded} from "../features/appSlice";
 
 const Splash=()=>{
     const history=useHistory();
     const dispatch=useDispatch();
 
     useEffect(()=>{
-        if(auth?.currentUser==null){
-            alert("ok null");
-            setTimeout(()=>{
+        dispatch(setLoaded(true))
+        auth.onAuthStateChanged((user)=>{
+            if(user==null){
                 history.push("/home")
-            },2000)
-        }else{
-            db.collection("users").where("email","==",auth?.currentUser?.email).get().then((snap)=>{
-                const res=snap.docs[0];
-                const data=res.data();
-                const key=res.id;
-                data.key=key;
-                dispatch(setUser(data));
-                history.push("/home")
-            }).catch((err)=>{
-                history.push("/home")
-            });
-        }
+            }else{
+                const email=user.email;
+                db.collection("users").where("email","==",email).get().then((snap)=>{
+                    const res=snap.docs[0];
+                    const data=res.data();
+                    const key=res.id;
+                    data.key=key;
+                    dispatch(setUser(data));
+                    history.push("/home")
+                }).catch((err)=>{
+                    history.push("/home")
+                });
+            }
+        })
         
-    },[auth])
+        
+    },[])
     return(
         <div className="splash">
         <img src={logo} />
