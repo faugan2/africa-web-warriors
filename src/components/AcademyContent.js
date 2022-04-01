@@ -19,6 +19,8 @@ import security from "./img/security.jpg";
 import networking from "./img/networking.png";
 import cloud from "./img/cloud.png";
 import ethical_hacking from "./img/ethical_hacking.jpeg";
+import programmation from "./img/programmation.jpg";
+import linux from "./img/linux.png";
 
 const HomeContent=()=>{
     return(
@@ -37,6 +39,18 @@ const HomeContent=()=>{
                         A2W offre à cet effet, une formation  qui englobe les domaines suivants:
                         </h3>
                         <div>
+                            <button>
+                                <img src={programmation} />
+                                <h4>Programmation</h4>
+                                <p>C, Python, Technologies web</p>
+                            </button>
+
+                            <button>
+                                <img src={linux} />
+                                <h4>Système</h4>
+                                <p>Linux</p>
+                            </button>
+
                             <button>
                                 <img src={helpdesk} />
                                 <h4>Help-Desk</h4>

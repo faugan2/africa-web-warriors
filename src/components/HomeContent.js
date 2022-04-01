@@ -39,8 +39,10 @@ const HomeContent=()=>{
                 <div>
                     <SchoolIcon style={{fontSize:"4rem"}}/>
                     <h2>Accademie</h2>
-                    <p>Devenez hackeur éthique ou testeur d'application ou préparez-vous pour avoir votre 
+                    <p>Devenez <strong>hackeur éthique</strong> ou testeur d'application ou préparez-vous pour avoir votre 
                         certificat en CCNA, Network+, AWS Cloud Practitioner,Pentest+, Comptia A+ .
+                        Voulez apprendre aussi sur la programmation et le système linux qui representent le fondement 
+                        même d'un hackeur éthique.
                     </p>
                 </div>
                 <div>

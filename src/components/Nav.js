@@ -6,9 +6,18 @@ import SchoolIcon from '@material-ui/icons/School';
 import VpnLockIcon from '@material-ui/icons/VpnLock';
 import AppsIcon from '@material-ui/icons/Apps';
 import {useHistory} from "react-router-dom";
+import Modal from "./Modal";
+import {useState,useEffect} from "react";
+import Login from "./Login";
 
 const Nav=({index})=>{
     const history=useHistory();
+
+    const [open,set_open]=useState(false);
+
+    const close_modal=()=>{
+        set_open(false);
+    }
     const go_to_home=()=>{
         history.push("/home");
     }
@@ -34,10 +43,14 @@ const Nav=({index})=>{
                 </Link>
             </div>
             <div className="user">
-                <button>
+                <button onClick={e=>{
+                    set_open(true);
+                }}>
                     <PermIdentityIcon style={{fontSize:"2.5rem"}} />
                 </button>
             </div>
+
+            {open==true && <Modal click={close_modal} content={<Login />} />}
         </div>
     )
 }
