@@ -48,7 +48,7 @@ export default function SimpleMenu() {
         <MenuItem onClick={e=>{
             history.push("/profile");
         }}>Profile</MenuItem>
-        <MenuItem onClick={handleClose}>Tableau de bord</MenuItem>
+        
         <MenuItem onClick={e=>{
             auth.signOut();
             dispatch(setUser(null));
