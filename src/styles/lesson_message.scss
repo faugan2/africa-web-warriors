@@ -1,0 +1,58 @@
+.lesson_message{
+    position:relative;
+    min-height: 60vh;
+    max-height: 60vh;
+    overflow-y:auto;
+    width:400px;
+
+    >.input_zone{
+        position:absolute;
+        bottom:0;
+        border-top: 1px solid silver;
+        width:98%;
+        margin:auto;
+        display:flex;
+        align-items: center;
+        z-index: 999;
+        >textarea{
+            flex:1;
+            resize: none;
+            border:none;
+            outline:none;
+            font-size: 0.7rem;
+
+        }
+
+        >button{
+            width:40px;
+            height:40px;
+            border-radius: 50%;
+            margin-left: 0.5rem;
+            border:none;
+            background-color:black;
+            color:white;
+            display:flex;
+            align-items: center;
+            justify-content:center;
+        }
+    }
+
+    >.messages{
+        min-height: calc(60vh - 60px);
+        max-height: calc(60vh - 60px);
+        overflow-y: auto;
+
+        >.no_data{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            >p{
+                margin:0;
+                font-size: 0.8rem;
+            }
+            >img{
+                width:100px;
+            }
+        }
+    }
+}
