@@ -11,6 +11,7 @@ import {useState,useEffect} from "react";
 import LessonContent from "../components/LessonContent";
 import LessonQuiz from "../components/LessonQuiz";
 import LessonTask from "../components/LessonTask";
+import LessonNote from "../components/LessonNote";
 
 const Lesson=()=>{
     const history=useHistory();
@@ -71,6 +72,8 @@ const Lesson=()=>{
                         {page==0 && <LessonContent />}
                         {page==1 && <LessonQuiz />}
                         {page==2 && <LessonTask />}
+
+                        <LessonNote />
                     </div>
                 </div>
             </div>

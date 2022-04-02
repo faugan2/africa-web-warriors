@@ -62,7 +62,7 @@ const HomeContent=()=>{
                     <p>Devenez <strong>hackeur éthique</strong> ou testeur d'application ou préparez-vous pour avoir votre 
                         certificat en CCNA, Network+, AWS Cloud Practitioner,Pentest+, Comptia A+ .
                         Voulez apprendre aussi sur la programmation et le système linux qui representent le fondement 
-                        même d'un hackeur éthique.
+                        même du hacking éthique.
                     </p>
                 </div>
                 <div>
