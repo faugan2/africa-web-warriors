@@ -21,9 +21,10 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 import {auth,db,storage} from "../firebase_file";
 import Modal from "../components/Modal";
 import EditUsername from "../components/EditUsername";
-
+import {useHistory} from "react-router-dom";
 const Profile=()=>{
     const user=useSelector(selectUser);
+    const history=useHistory();
 
     const [me,set_me]=useState(null);
     const [progress,set_progress]=useState(false);
@@ -62,6 +63,10 @@ const Profile=()=>{
     const close_modal=()=>{
         set_open(false);
     }
+
+    const go_to_lesson=()=>{
+        history.push("/lesson");
+    }
     return(
         <div className="profile">
              <Nav  />
@@ -89,37 +94,37 @@ const Profile=()=>{
                         
                     </div>
                     <div className="matieres">
-                        <div className="line progress">
+                        <div className="line progress" onClick={go_to_lesson}>
                             <img src={programmation} />
                             <p>Programmation</p>
                             <CheckCircleIcon className="status progress"/>
                         </div>
-                        <div className="line progress">
+                        <div className="line progress" onClick={go_to_lesson}>
                             <img src={linux} />
                             <p>Système</p>
                             <CheckCircleIcon className="status progress"/>
                         </div>
-                        <div className="line progress">
+                        <div className="line progress" onClick={go_to_lesson}>
                             <img src={helpdesk} />
                             <p>Help-Desk</p>
                             <CheckCircleIcon className="status progress"/>
                         </div>
-                        <div className="line progress">
+                        <div className="line progress" onClick={go_to_lesson}>
                             <img src={security} />
                             <p>Security</p>
                             <CheckCircleIcon className="status progress"/>
                         </div>
-                        <div className="line progress">
+                        <div className="line progress" onClick={go_to_lesson}>
                             <img src={networking} />
                             <p>Networking</p>
                             <CheckCircleIcon className="status progress"/>
                         </div>
-                        <div className="line progress">
+                        <div className="line progress" onClick={go_to_lesson}>
                             <img src={cloud} />
                             <p>Cloud</p>
                             <CheckCircleIcon className="status progress"/>
                         </div>
-                        <div className="line progress">
+                        <div className="line progress" onClick={go_to_lesson}>
                             <img src={ethical_hacking} />
                             <p>Ethical Hacking</p>
                             <CheckCircleIcon className="status progress"/>

@@ -120,19 +120,16 @@ const HomeContent=()=>{
                             <div>
                                 <PublicIcon style={{fontSize:"4rem"}} />
                                 <h2>Développement Web</h2>
-                                <p>HTML5,CSS, JS, ReactJs, NodeJS</p>
                             </div>
 
                             <div>
                                 <PhoneAndroidIcon style={{fontSize:"4rem"}} />
                                 <h2>Développement Mobile</h2>
-                                <p>React-Native</p>
                             </div>
 
                             <div>
                                 <DesktopWindowsIcon style={{fontSize:"4rem"}} />
                                 <h2>Développement Desktop</h2>
-                                <p>C++, Qt</p>
                             </div>
                         </div>
                     </div>

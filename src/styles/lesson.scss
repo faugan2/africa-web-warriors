@@ -1,0 +1,7 @@
+.lesson{
+    border:1px solid red;
+    >.lesson_content{
+        position:absolute;
+        top:60px;
+    }
+}

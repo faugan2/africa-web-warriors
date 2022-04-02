@@ -13,6 +13,7 @@ import Software from "./screens/Software";
 import Profile from "./screens/Profile";
 import Mentions from "./screens/Mentions";
 import Terms from "./screens/Terms";
+import Lesson from "./screens/Lesson";
 
 function App() {
   return (
@@ -48,6 +49,10 @@ function App() {
 
         <Route path="/terms-conditions" exact>
           <Terms />
+        </Route>
+
+        <Route path="/lesson" exact>
+          <Lesson />
         </Route>
 
       </Switch>
