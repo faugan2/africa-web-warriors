@@ -1,5 +1,7 @@
 import "../styles/lesson_quiz.scss";
 import Quiz from 'react-quiz-component';
+import {useState,useEffect} from "react";
+
 const LessonQuiz=()=>{
      const quiz =  {
         "quizTitle": "React Quiz Component Demo",
@@ -101,21 +103,37 @@ const LessonQuiz=()=>{
         ]
       } 
 
+      const [result,set_result]=useState(false);
+      const [point,set_point]=useState("");
+
       const setQuizResult = (obj) => {
         console.log(obj);
-        alert("done");
-        // YOUR LOGIC GOES HERE
+        const total_questions=obj.numberOfQuestions;
+        const total_correct_answsers=obj.numberOfCorrectAnswers;
+        const total_wrong_answsers=obj.numberOfIncorrectAnswers;
+        const questions=obj.questions;
+        const user_input=obj.userInput;
+        
+        set_result(true);
+        set_point(obj.correctPoints+"/"+obj.totalPoints);
+        
       }
 
     return(
         <div className="lesson_quiz">
-            <Quiz 
+            {result==false && <Quiz 
             quiz={quiz} 
             showDefaultResult={false}
             shuffle={true}
             onComplete={setQuizResult}
 
-            />
+            />}
+            {
+                result==true && 
+                <div className="result">
+                    <h3>Resultat: {point}</h3>
+                </div>
+            }
         </div>
     )
 }
