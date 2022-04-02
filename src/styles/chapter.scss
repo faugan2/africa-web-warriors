@@ -5,6 +5,11 @@
     align-items: center;
     gap:0.3rem;
     cursor: pointer;
+
+    &.active{
+        border:1px solid red;
+        font-weight: bold;
+    }
     >p{
         margin:0;
         font-size: 0.8rem;

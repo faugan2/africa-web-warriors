@@ -10,7 +10,7 @@
     min-height:calc(100vh - 140px );
     max-height:calc(100vh - 140px );
     overflow-y: auto;
-
+    padding-bottom: 1rem;
     >.no_data{
         display:flex;
         flex-direction: column;

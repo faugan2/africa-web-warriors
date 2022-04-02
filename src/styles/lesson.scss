@@ -9,6 +9,9 @@
         width:100vw;
         >.left{
             width:300px;
+            min-height:calc(100vh - 100px);
+            max-height:calc(100vh - 100px);
+            overflow-y: auto;
             margin-left: 1rem;
             border:1px solid silver;
             padding-bottom: 1rem;
@@ -38,6 +41,7 @@
             margin-right: 1rem;
             min-height:calc(100vh - 100px);
             max-height:calc(100vh - 100px);
+            padding-bottom: 1rem;
             >.top{
                 background-color: black;
                 display:flex;
@@ -70,6 +74,7 @@
 
             >.body{
                 position:relative;
+                
             }
         }
         

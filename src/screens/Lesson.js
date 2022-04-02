@@ -28,6 +28,14 @@ const Lesson=()=>{
     const change_content=(index)=>{
         set_page(index);
     }
+
+    const chapter_clicked=(index)=>{
+        const el=document.querySelectorAll(".chapter");
+        for(var i=0; i<el.length; i++){
+            el[i].classList.remove("active");
+        }
+        el[index].classList.add("active");
+    }
     return(
         <div className="lesson">
             <Nav />
@@ -47,7 +55,7 @@ const Lesson=()=>{
                         {
                             [1,2,3,4,5,6,7,8,9,10].map((item,i)=>{
                                 return(
-                                    <Chapter key={i} item={item} />
+                                    <Chapter key={i} item={item} click={chapter_clicked.bind(this,i)} />
                                 )
                             })
                         }
