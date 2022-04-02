@@ -1,13 +1,14 @@
 .chapter{
     margin-top:1rem;
     margin-left: 0.5rem;
+    margin-right: 0.5rem;
     display:flex;
     align-items: center;
     gap:0.3rem;
     cursor: pointer;
 
     &.active{
-        border:1px solid red;
+        border-bottom:1px solid silver;
         font-weight: bold;
     }
     >p{
