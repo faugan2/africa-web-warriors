@@ -37,6 +37,7 @@
             border:1px solid silver;
             margin-right: 1rem;
             min-height:calc(100vh - 100px);
+            max-height:calc(100vh - 100px);
             >.top{
                 background-color: black;
                 display:flex;
