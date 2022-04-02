@@ -11,6 +11,8 @@ import Academy from "./screens/Academy";
 import Security from "./screens/Security";
 import Software from "./screens/Software";
 import Profile from "./screens/Profile";
+import Mentions from "./screens/Mentions";
+import Terms from "./screens/Terms";
 
 function App() {
   return (
@@ -38,6 +40,14 @@ function App() {
 
         <Route path="/profile" exact>
           <Profile />
+        </Route>
+
+        <Route path="/mentions" exact>
+          <Mentions />
+        </Route>
+
+        <Route path="/terms-conditions" exact>
+          <Terms />
         </Route>
 
       </Switch>

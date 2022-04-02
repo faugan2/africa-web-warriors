@@ -23,9 +23,8 @@ const Footer=()=>{
             <div>
                 <h1>Liens utiles</h1>
                 <ol>
-                    <li><Link to="/"><a>Plan du site</a></Link></li>
-                    <li><Link to="/"><a>Mentions Légales</a></Link></li>
-                    <li><Link to="/"><a>Termes & Conditions</a></Link></li>
+                    <li><Link to="/mentions"><a>Mentions Légales</a></Link></li>
+                    <li><Link to="/terms-conditions"><a>Termes & Conditions</a></Link></li>
                 </ol>
             </div>
             <div>
