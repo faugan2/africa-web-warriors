@@ -30,12 +30,12 @@ const Footer=()=>{
             <div>
                 <h1>Trouvez-nous sur:</h1>
                 <div className="socials">
-                    <a href=""><FacebookIcon /></a> 
-                    <a href=""><TwitterIcon /></a>
-                    <a href=""><YouTubeIcon /></a>
-                    <a href=""><GitHubIcon /></a>
-                    <a href=""><WhatsAppIcon /></a>
-                    <a href=""><LinkedInIcon /></a>
+                    <a href="https://www.facebook.com/Africa-Web-Warriors-102450472431970" target="_blank"><FacebookIcon /></a> 
+                    <a href="https://twitter.com/warriors_africa" target="_blank"><TwitterIcon /></a>
+                    <a href="https://www.youtube.com/channel/UCEnTrb9DEATh3axyUHUr_9g" target="_blank"><YouTubeIcon /></a>
+                    <a href="https://github.com/africawebwarriors" target="_blank"><GitHubIcon /></a>
+                    <a href="https://wa.me/22892950803" target="_blank"><WhatsAppIcon /></a>
+                    <a href="https://www.linkedin.com/in/africa-web-warriors-689233236" target="_blank" ><LinkedInIcon /></a>
                 </div>
 
                 <div className="contacts">
