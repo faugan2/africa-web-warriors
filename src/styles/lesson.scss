@@ -36,6 +36,36 @@
             flex:1;
             border:1px solid silver;
             margin-right: 1rem;
+
+            >.top{
+                background-color: black;
+                display:flex;
+                align-items:center;
+                >button{
+                    padding:0.5rem;
+                    width:150px;
+                    display:flex;
+                    align-items: center;
+                    gap:0.5rem;
+                    background-color:transparent;
+                    border:none;
+                    color:white;
+                    cursor: pointer;
+
+                    >p{
+                        margin:0;
+                        padding-bottom: 0.2rem;
+                        text-align: left;
+                    }
+
+                    &.active{
+                        font-weight: bold;
+                        >p{
+                            border-bottom:1px solid
+                        }
+                    }
+                }
+            }
         }
         
     }

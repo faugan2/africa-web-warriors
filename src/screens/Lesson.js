@@ -4,10 +4,26 @@ import Footer from "../components/Footer";
 import {useHistory} from "react-router-dom";
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import Chapter from "../components/Chapter";
+import VideoLibraryIcon from '@material-ui/icons/VideoLibrary';
+import FormatListBulletedIcon from '@material-ui/icons/FormatListBulleted';
+import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
+import {useState,useEffect} from "react";
 
 const Lesson=()=>{
     const history=useHistory();
+    const [page,set_page]=useState(0);
 
+    useEffect(()=>{
+        const btns=document.querySelectorAll(".right>.top>button");
+        for(var i=0; i<btns.length; i++){
+            btns[i].classList.remove("active");
+        }
+        btns[page].classList.add("active");
+    },[page]);
+
+    const change_content=(index)=>{
+        set_page(index);
+    }
     return(
         <div className="lesson">
             <Nav />
@@ -35,9 +51,18 @@ const Lesson=()=>{
                 </div>
                 <div className="right">
                     <div className="top">
-                        <button>Contenu</button>
-                        <button>QUIZ</button>
-                        <button>Exercice</button>
+                        <button onClick={change_content.bind(this,0)}>
+                            <VideoLibraryIcon />
+                            <p>Contenu</p>
+                        </button>
+                        <button onClick={change_content.bind(this,1)}>
+                            <FormatListBulletedIcon />
+                            <p>QUIZ</p>
+                        </button>
+                        <button onClick={change_content.bind(this,2)}>
+                            <AssignmentIndIcon />
+                            <p>Exercice</p>
+                        </button>
                     </div>
                     <div className="body">body</div>
                 </div>
