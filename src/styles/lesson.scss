@@ -8,7 +8,7 @@
         gap:1rem;
         width:100vw;
         >.left{
-            width:250px;
+            width:300px;
             margin-left: 1rem;
             border:1px solid silver;
             padding-bottom: 1rem;
@@ -36,7 +36,7 @@
             flex:1;
             border:1px solid silver;
             margin-right: 1rem;
-
+            min-height:calc(100vh - 100px);
             >.top{
                 background-color: black;
                 display:flex;

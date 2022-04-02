@@ -8,6 +8,9 @@ import VideoLibraryIcon from '@material-ui/icons/VideoLibrary';
 import FormatListBulletedIcon from '@material-ui/icons/FormatListBulleted';
 import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
 import {useState,useEffect} from "react";
+import LessonContent from "../components/LessonContent";
+import LessonQuiz from "../components/LessonQuiz";
+import LessonTask from "../components/LessonTask";
 
 const Lesson=()=>{
     const history=useHistory();
@@ -64,7 +67,11 @@ const Lesson=()=>{
                             <p>Exercice</p>
                         </button>
                     </div>
-                    <div className="body">body</div>
+                    <div className="body">
+                        {page==0 && <LessonContent />}
+                        {page==1 && <LessonQuiz />}
+                        {page==2 && <LessonTask />}
+                    </div>
                 </div>
             </div>
         </div>
