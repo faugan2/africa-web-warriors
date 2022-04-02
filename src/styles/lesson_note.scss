@@ -16,8 +16,7 @@
         flex-direction: column;
         align-items: center;
         >img{
-            width:150px;
-            height:150px;
+            width:100px;
         }
         >p{
             margin:0;
@@ -44,7 +43,7 @@
             &:hover{
                 opacity: 0.6;
             }
-            
+
             &:nth-child(2){
                 margin-bottom: 0;
             }
