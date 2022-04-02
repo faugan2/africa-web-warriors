@@ -11,18 +11,36 @@ import get_driver from "./img/get_driver.png";
 import psg from "./img/psg.png";
 import jsql from "./img/jsql.png";
 import Contact from "./Contact";
-
+import PublicIcon from '@material-ui/icons/Public';
+import PhoneAndroidIcon from '@material-ui/icons/PhoneAndroid';
+import DesktopWindowsIcon from '@material-ui/icons/DesktopWindows';
 const HomeContent=()=>{
     return(
         <div className="software_content">
             
             <div className="top">
                 <div>
-                    <h3>
-                        Avez-vous une idée d'application(web, mobile, desktop, etc...) que vous voulez réaliser ?
-                    </h3>
-                    <p>
-                        A2W peut vous aider à atteindre cet objectif rapidement.
+                    <h2>
+                        Avez-vous une idée d'application que vous voulez réaliser ?
+                    </h2>
+                    <div className="types">
+                        <div>
+                            <PublicIcon />
+                            <label>Web</label>
+                        </div>
+                        <div>
+                            <PhoneAndroidIcon />
+                            <label>Mobile</label>
+                        </div>
+                        <div>
+                            <DesktopWindowsIcon />
+                            <label>Desktop</label>
+                        </div>
+                        
+                        
+                    </div>
+                    <p className="help">
+                        <strong>A2W</strong> peut vous aider à atteindre cet objectif rapidement.
                     </p>
                     <h3>Comment nous procédons ?</h3>
                     <p>
