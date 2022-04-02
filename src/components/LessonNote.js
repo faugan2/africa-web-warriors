@@ -33,10 +33,10 @@ const LessonNote=()=>{
             </div>
 
             <div className="floating_btn">
-                <button onClick={submit_project}>
+                <button onClick={submit_project} title="Aller à la discussion">
                     <FolderIcon />
                 </button>
-                <button onClick={send_message}>
+                <button onClick={send_message} title="Soumettre mon exercice">
                     <WhatsAppIcon />
                 </button>
             </div>
