@@ -114,6 +114,7 @@ const LessonQuiz=()=>{
         const questions=obj.questions;
         const user_input=obj.userInput;
         
+        if(obj.totalPoints==0) return;
         set_result(true);
         set_point(obj.correctPoints+"/"+obj.totalPoints);
         
@@ -126,7 +127,6 @@ const LessonQuiz=()=>{
             showDefaultResult={false}
             shuffle={true}
             onComplete={setQuizResult}
-
             />}
             {
                 result==true && 
