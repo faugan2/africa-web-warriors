@@ -1,7 +1,42 @@
 .lesson{
-    border:1px solid red;
+   
     >.lesson_content{
         position:absolute;
         top:60px;
+        display:flex;
+        margin-top: 1rem;
+        gap:1rem;
+        width:100vw;
+        >.left{
+            width:250px;
+            margin-left: 1rem;
+            border:1px solid silver;
+            padding-bottom: 1rem;
+            >.top{
+                background-color:black;
+                color:white;
+                display:flex;
+                align-items: center;
+                gap:0.5rem;
+                >h4{
+                    margin:0;
+                    font-size: 0.8rem;
+                }
+                >button{
+                    padding:0.5rem;
+                    background-color:transparent;
+                    color:white;
+                    border:none;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        >.right{
+            flex:1;
+            border:1px solid silver;
+            margin-right: 1rem;
+        }
+        
     }
 }

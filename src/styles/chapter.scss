@@ -1,0 +1,25 @@
+.chapter{
+    margin-top:1rem;
+    margin-left: 0.5rem;
+    display:flex;
+    align-items: center;
+    gap:0.3rem;
+    cursor: pointer;
+    >p{
+        margin:0;
+        font-size: 0.8rem;
+    }
+    >.cb{
+        font-size: 1.2rem;
+        &.progress{
+            color:silver;
+        }
+        &.done{
+            color:green;
+        }
+    }
+
+    &:hover{
+        opacity: 0.6;
+    }
+}
