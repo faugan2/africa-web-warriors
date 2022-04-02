@@ -10,9 +10,43 @@
         width:80%;
         margin:auto;
         margin-top: 2rem;
-        display:flex;
+        
         >div{
             flex:1;
+            display:flex;
+            gap:2rem;
+            >div{
+                flex:1;
+                >h2{
+                    margin:0;
+                    padding:0;
+                    
+                }
+                >p{
+                    text-align: justify;
+                }
+
+                >#internet{
+                    font-size: 4rem;
+                }
+                >#danger{
+                    font-size: 4rem;
+                    color:indianred;
+                }
+                >#solution{
+                    font-size: 4rem;
+                    color:green;
+                }
+            }
+
+            &.zone_contact{
+                
+                width:50%;
+                margin:auto;
+                border-top: 1px solid whitesmoke;
+                margin-top: 2rem;
+                padding-top: 1rem;
+            }
         }
     }
     

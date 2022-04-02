@@ -11,28 +11,46 @@ import get_driver from "./img/get_driver.png";
 import psg from "./img/psg.png";
 import jsql from "./img/jsql.png";
 import Contact from "./Contact";
-
+import RouterIcon from '@material-ui/icons/Router';
+import ReportProblemIcon from '@material-ui/icons/ReportProblem';
+import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
 const HomeContent=()=>{
     return(
         <div className="security_content">
             
             <div className="top">
                 <div>
-                    <p>L'utilisation de l'internet devient de plus en plus présent dans nos vie avec beaucoup d'avantages 
-                        que nous connaissons tous. Mais en même temps, cela nous expose à de graves dangers que nous ignorons 
-                        la plus part du temps.
-                    </p>
-                    <p>
-                        C'est dans cette optique que A2W accompagne les entreprises et aussi les particuliers à mieux sécuriser
+
+                    <div>
+                        <RouterIcon id="internet" />
+                        <h2>Internet</h2>
+                        <p>L'utilisation de l'internet devient de plus en plus présent dans nos vie avec beaucoup d'avantages 
+                        que nous connaissons tous. Cela nous facilite la vie et nous permet de communiquer facilement et rendre 
+                        certaines de nos tâches quotidiennes plus agréables.</p>
+                    </div>
+                    <div>
+                        <ReportProblemIcon id="danger" />
+                        <h2 style={{color:"indianred"}}>Dangers</h2>
+                        <p>
+                        Mais en même temps, cela nous expose à de graves dangers que nous ignorons 
+                        la plus part du temps. Nous risquons que des personnes malveillants utilisent certaines failles pour 
+                        voler des données ou des informations confidentielles.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <HelpOutlineIcon id="solution"/>
+                        <h2 style={{color:"green"}}>Solutions</h2>
+                        <p>
+                        Heureusement, <strong>A2W</strong> accompagne les entreprises et aussi les particuliers à mieux sécuriser
                         leur réseaux et éviter des attaques pouvent conduire à d'énormes dégats.
-                    </p>
-                    <h3>Besoin de mettre en place un réseau informatique ou sécuriser votre réseau informatique actuel ?</h3>
-                    <p>
-                        Contactez A2W pour vous aider à mettre en place votre réseau ou à faire des tests d'intrusion 
-                        afin de renforcer votre niveau de sécurité.
-                    </p>
+                        </p>
+                    </div>
                 </div>
-                <Contact />
+                <div className="zone_contact">
+                    <Contact />
+                </div>
+                
                
             </div>
             <Footer />
