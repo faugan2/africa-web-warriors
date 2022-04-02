@@ -86,11 +86,14 @@
             align-items: center;
             justify-content:space-between;
             gap:1rem;
-            >img{
-                width:100px;
-                height:80px;
-                object-fit: fill;
+            >a{
+                >img{
+                    width:100px;
+                    height:80px;
+                    object-fit: fill;
+                }
             }
+            
         }
     }
 }

@@ -84,15 +84,13 @@ const HomeContent=()=>{
             <div className="partenaires">
                 <h2>Ils nous font confiances</h2>
                 <div>
-                    <img src={psg} />
-                    <img src={adesco} />
-                    <img src={assitchape} />
-                    <img src={get_driver} />
-                    <img src={jsql} />
-                    <img src={foaf} />
-                    <img src={sici} />
-
-
+                    <a><img src={psg} /></a>
+                    <a><img src={adesco} /></a>
+                    <a><img src={assitchape} /></a>
+                    <a><img src={get_driver} /></a>
+                    <a><img src={jsql} /></a>
+                    <a><img src={foaf} /></a>
+                    <a><img src={sici} /></a>
                 </div>
             </div>
 
