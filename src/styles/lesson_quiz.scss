@@ -1,3 +1,6 @@
-.chapter_content{
-   
+.lesson_quiz{
+   width:calc(100% - 300px);
+   min-height:calc(100vh - 130px);
+   max-height:calc(100vh - 130px);
+   overflow-y: auto;
 }
