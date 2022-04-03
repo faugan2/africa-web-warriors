@@ -36,6 +36,32 @@ const Lesson=()=>{
         }
         el[index].classList.add("active");
     }
+
+    const data=[
+        {
+            category:"Le langage python",
+            chapters:[
+                "Introduction",
+                "Stockez des informations dans la mémoire de l'ordinateur : les variables",
+                "Exécutez des actions conditionnelle: IF",
+                "Repétez des actions avec des boucles: For et While",
+                "Automatisez des tâches avec des fonctions",
+                "Access au réseau",
+                "Acceder au système de fichier",
+            ]
+        },
+        {
+            category:"Le langage C",
+            chapters:[
+                "Introduction",
+                "Variables et type de variables",
+                "Conditions, boucles avec le langage C",
+                "Création de fonction",
+                "Les tableaux et leurs usages",
+                "Créez des outils d'automatisation avec le langage C"
+            ]
+        }
+    ];
     return(
         <div className="lesson">
             <Nav />
@@ -53,11 +79,28 @@ const Lesson=()=>{
                     </div>
                     <div className="body">
                         {
-                            [1,2,3,4,5,6,7,8,9,10].map((item,i)=>{
+
+                            data.map((item,i)=>{
+                                const cat=item.category;
+                                const chapters=item.chapters;
                                 return(
-                                    <Chapter key={i} item={item} click={chapter_clicked.bind(this,i)} />
+                                    <div key={i}>
+                                        <h3 style={{textAlign:"center"}}>{cat}</h3>
+                                        {
+                                            chapters.map((item2,i2)=>{
+                                                return(
+                                                    <Chapter 
+                                                    key={`${i2}`} 
+                                                    item={item2} 
+                                                    click={chapter_clicked.bind(this,i2)} 
+                                                    />
+                                                )
+                                            })
+                                        }
+                                    </div>
                                 )
                             })
+                            /**/
                         }
                     </div>
                 </div>

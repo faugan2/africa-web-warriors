@@ -113,6 +113,7 @@
                     &.fail{
                         border-bottom:2px solid indianred;
                     }
+                    
 
                     &:hover{
                         opacity: 0.6;
@@ -138,6 +139,10 @@
                         }
                         &.fail{
                             color:indianred;
+                        }
+
+                        &.start{
+                            color:blue;
                         }
                     }
                 }

@@ -6,9 +6,8 @@
     align-items: center;
     gap:0.3rem;
     cursor: pointer;
-
+    
     &.active{
-        border-bottom:1px solid silver;
         font-weight: bold;
     }
     >p{
