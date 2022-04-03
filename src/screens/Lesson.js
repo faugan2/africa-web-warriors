@@ -1,4 +1,5 @@
 import "../styles/lesson.scss";
+import "../styles/lesson_mobile.scss";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import {useHistory} from "react-router-dom";

@@ -1,4 +1,5 @@
 import "../styles/profile.scss";
+import "../styles/profile_mobile.scss";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import { selectUser } from "../features/appSlice";

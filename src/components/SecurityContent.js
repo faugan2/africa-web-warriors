@@ -1,4 +1,5 @@
 import "../styles/security_content.scss";
+import "../styles/security_content_mobile.scss";
 import ReactPlayer from 'react-player/lazy'
 import Footer from "./Footer";
 import SchoolIcon from '@material-ui/icons/School';

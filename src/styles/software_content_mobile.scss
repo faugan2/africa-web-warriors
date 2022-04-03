@@ -1,0 +1,17 @@
+@media only screen and (max-width: 600px) {
+    .software_content{
+        >.top{
+            flex-direction: column;
+            >div{
+                >h2{
+                    font-size: 1rem;
+                }
+
+                >.types{
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+}
+

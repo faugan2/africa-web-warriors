@@ -116,21 +116,21 @@ const HomeContent=()=>{
                     </p>
 
                     <div>
-                        <h3>Nous avons aussi des formations à la carte dans les secteurs suivants:</h3>
+                        <h3 style={{textAlign:"center"}}>Nous avons aussi des formations à la carte dans les secteurs suivants:</h3>
                         <div className="cartes">
                             <div>
-                                <PublicIcon style={{fontSize:"4rem"}} />
-                                <h2>Développement Web</h2>
+                                <PublicIcon style={{fontSize:"2rem",color:"gray"}} />
+                                <h2>Web</h2>
                             </div>
 
                             <div>
-                                <PhoneAndroidIcon style={{fontSize:"4rem"}} />
-                                <h2>Développement Mobile</h2>
+                                <PhoneAndroidIcon style={{fontSize:"2rem",color:"gray"}} />
+                                <h2>Mobile</h2>
                             </div>
 
                             <div>
-                                <DesktopWindowsIcon style={{fontSize:"4rem"}} />
-                                <h2>Développement Desktop</h2>
+                                <DesktopWindowsIcon style={{fontSize:"2rem",color:"gray"}} />
+                                <h2>Desktop</h2>
                             </div>
                         </div>
                     </div>

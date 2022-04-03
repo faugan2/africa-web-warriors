@@ -13,7 +13,13 @@
                         display:grid ;
                         grid-template-columns: 1fr 1fr;
                     }
+
+                    >h4{
+                       
+                        text-align:justify;
+                    }
                 }
+               
 
                 >div{
                     
@@ -23,7 +29,7 @@
                     }
 
                     >div{
-                        flex-direction: column;
+                        
                         >div{
                             margin-bottom: 1rem;
                             >h2{
