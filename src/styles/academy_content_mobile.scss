@@ -1,6 +1,7 @@
 @media only screen and (max-width: 600px) {
     .academy_content{
         >.top{
+            
             >div{
                 >p{
                     text-align: justify;
@@ -17,6 +18,15 @@
                     >h4{
                        
                         text-align:justify;
+                    }
+
+                    >.line_start{
+                        
+                        width:80vw;
+                        >button{
+                            width:70vw;
+                            margin-left: 1rem;
+                        }
                     }
                 }
                
