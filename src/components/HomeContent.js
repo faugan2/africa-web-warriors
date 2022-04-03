@@ -51,7 +51,7 @@ const HomeContent=()=>{
                    </div>
                </div>
                <div className="right">
-                <ReactPlayer url='https://www.youtube.com/watch?v=nbmJnCHXaW8' width={500} height={300} />
+                <ReactPlayer url='https://www.youtube.com/watch?v=gbgOVA2l78o' width={500} height={300} />
                </div>
            </div>
 
