@@ -60,6 +60,17 @@ const Lesson=()=>{
                 "Les tableaux et leurs usages",
                 "Créez des outils d'automatisation avec le langage C"
             ]
+        },
+        {
+            category:"Les technologies web",
+            chapters:[
+                "Introduction",
+                "HTML & CSS",
+                "Javascript",
+                "Interaction avec le serveur web: PHP",
+                "Les bases de données: MYSQL",
+                "Déployement d'une application web sur un serveur"
+            ]
         }
     ];
     return(
