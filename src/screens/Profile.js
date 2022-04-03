@@ -22,6 +22,9 @@ import {auth,db,storage} from "../firebase_file";
 import Modal from "../components/Modal";
 import EditUsername from "../components/EditUsername";
 import {useHistory} from "react-router-dom";
+
+import Unlock from "../components/Unlock";
+
 const Profile=()=>{
     const user=useSelector(selectUser);
     const history=useHistory();
@@ -29,6 +32,9 @@ const Profile=()=>{
     const [me,set_me]=useState(null);
     const [progress,set_progress]=useState(false);
     const [open,set_open]=useState(false);
+    const [open_unlock,set_open_unlock]=useState(false);
+
+    
 
     useEffect(()=>{
         set_me(user);
@@ -64,6 +70,10 @@ const Profile=()=>{
         set_open(false);
     }
 
+    const close_unlock=()=>{
+        set_open_unlock(false);
+    }
+
     const go_to_lesson=()=>{
         history.push("/lesson");
     }
@@ -89,10 +99,14 @@ const Profile=()=>{
                             }}><EditIcon /></button>
                         </div>
 
-                        {/*<Steps />*/}
-
-                        
+                        <div className="zone_deblocage">
+                            <button onClick={e=>{
+                                set_open_unlock(true);
+                            }}>Debloquez les cours</button>
+                        </div>
                     </div>
+
+
                     <div className="matieres">
                         <div className="line progress" onClick={go_to_lesson}>
                             <img src={programmation} />
@@ -130,11 +144,14 @@ const Profile=()=>{
                             <CheckCircleIcon className="status progress"/>
                         </div>
                     </div>
+
+                    
                 </div>
                 <Footer />
              </div>
              
              {open==true && <Modal content={<EditUsername click={close_modal} />} click={close_modal} />}
+             {open_unlock==true && <Modal content={<Unlock click={close_unlock} />} click={close_unlock} />}
         </div>
     );
 }
