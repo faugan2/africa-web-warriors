@@ -1,6 +1,7 @@
 import "../styles/lesson_quiz.scss";
 import Quiz from 'react-quiz-component';
 import {useState,useEffect} from "react";
+import no_data from "./img/no_data.jpg";
 
 const LessonQuiz=()=>{
      const quiz =  {
@@ -122,18 +123,24 @@ const LessonQuiz=()=>{
 
     return(
         <div className="lesson_quiz">
-            {result==false && <Quiz 
+            {/*result==false && <Quiz 
             quiz={quiz} 
             showDefaultResult={false}
             shuffle={true}
             onComplete={setQuizResult}
-            />}
+            />*/}
             {
-                result==true && 
+                /*result==true && 
                 <div className="result">
                     <h3>Resultat: {point}</h3>
-                </div>
+                </div>*/
             }
+
+          <div className="no_data">
+                <img src={no_data} />
+                <p>Aucune information n'est trouvée</p>
+            </div>
+
         </div>
     )
 }

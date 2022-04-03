@@ -10,4 +10,18 @@
        justify-content:center;
 
    }
+   >.no_data{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    >img{
+        width:100px;
+    }
+    >p{
+        margin:0;
+        font-size: 0.8rem;
+    }
+}
+
+
 }
