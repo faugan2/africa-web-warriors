@@ -6,6 +6,7 @@ import { useSelector,useDispatch } from "react-redux";
 import {selectUser,selectLoaded,setUser} from "../features/appSlice";
 import {useState,useEffect} from "react";
 import "../styles/menu.scss";
+import "../styles/menu_mobile.scss";
 import { auth } from '../firebase_file';
 import {useHistory} from "react-router-dom";
 

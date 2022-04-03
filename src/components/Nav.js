@@ -1,4 +1,6 @@
 import "../styles/nav.scss";
+import "../styles/nav_mobile.scss";
+
 import logo from "./img/logo.png";
 import PermIdentityIcon from '@material-ui/icons/PermIdentity';
 import {Link} from "react-router-dom"
@@ -38,6 +40,7 @@ const Nav=({index})=>{
     const go_to_home=()=>{
         history.push("/home");
     }
+
     return(
         <div className="nav">
             <div className="logo">

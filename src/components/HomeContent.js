@@ -1,4 +1,5 @@
 import "../styles/home_content.scss";
+import "../styles/home_content_mobile.scss";
 import ReactPlayer from 'react-player/lazy'
 import Footer from "./Footer";
 import SchoolIcon from '@material-ui/icons/School';

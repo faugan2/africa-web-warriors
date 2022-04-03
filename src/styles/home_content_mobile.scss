@@ -1,0 +1,40 @@
+@media only screen and (max-width: 600px) {
+    .home_content{
+       >.top{
+           flex-direction: column;
+           >.left{
+               >div{
+                   >button{
+                       width:80%;
+                   }
+               }
+           }
+
+           >.right{
+               display:flex;
+               margin-top: 2rem;
+               >div{
+                   flex:1;
+                   width:min(50%,80vw) !important;
+               }
+           }
+       }
+
+       >.services{
+           flex-direction: column;
+       }
+
+       >.partenaires{
+          
+           display:flex;
+           flex-direction: column;
+           align-items: center;
+           >div{
+               display:grid;
+               grid-template-columns: 1fr 1fr;
+               grid-gap:1rem;
+           }
+       }
+    }
+    
+}

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "../styles/footer.scss";
+import "../styles/footer_mobile.scss";
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import YouTubeIcon from '@material-ui/icons/YouTube';
