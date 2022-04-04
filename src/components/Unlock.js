@@ -8,6 +8,7 @@ import {auth,db,} from "../firebase_file";
 import CircularProgress from '@material-ui/core/CircularProgress';
 import {selectUser} from "../features/appSlice";
 import {useSelector} from "react-redux";
+import logo from "./img/logo.png";
 
 const Unlock=({click})=>{
 
@@ -77,28 +78,22 @@ const Unlock=({click})=>{
             {alerte!="" && <p className="alerte">{alerte}</p>}
 
             <h4>Comment obtenir le code ?</h4>
-            <div className="line">
-                <p>
-                    Vous devez payer les frais de la formation à partir d'un des moyens ci-dessous. 
-                    Le code vous sera communiqué ou envoyé par mail.<br /><br />
+            <div className="line2">
+                <p>Faites un transfert d'argent <strong>Western Union</strong> avec les informations suivantes:</p>
+                <ol>
+                    <li>Nom du bénéficiaire: <strong>BIDI KODJO FOGAN</strong></li>
+                    <li>Pays du bénéficiaire: <strong>TOGO</strong></li>
+                    <li>Contact du bénéficiaire: <strong>+228 92 95 08 03</strong></li>
+                    <li>Montant à envoyer: <strong>$260 (155 000 CFA)</strong></li>
+                </ol>
+                <p>Une fois le payement effectué, envoyez-nous sur WhatsApp(
+                    <strong>+228 92 95 08 03</strong>) le reçu à fin de recevoir votre code 
+                    de déblocage
                 </p>
+                
             </div>
 
-            <div className="moyens international">
-                <button>
-                    <img src={carte_visa} />
-                </button>
-            </div>
-            <h4>Pour ceux qui sont au Togo:</h4>
-
-            <div className="moyens">
-                <button>
-                    <img src={tmoney} />
-                </button>
-                <button>
-                    <img src={flooz} />
-                </button>
-            </div>
+            
         </div>
     )
 }

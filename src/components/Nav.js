@@ -65,7 +65,9 @@ const Nav=({index})=>{
             <div className="user">
                 {me==null && <button onClick={e=>{
                     set_open(true);
-                }}>
+                }}
+                
+                >
                     <PermIdentityIcon style={{fontSize:"2.5rem"}} />
                 </button>}
 
