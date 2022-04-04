@@ -77,7 +77,12 @@ const Profile=()=>{
     }
 
     const go_to_lesson=()=>{
+       if(me?.code==undefined){
+        set_open_unlock(true);
+       }else{
         history.push("/lesson");
+       }
+        
     }
     return(
         <div className="profile">
@@ -126,32 +131,32 @@ const Profile=()=>{
                             <p>Programmation</p>
                             <CheckCircleIcon className={`status progress ${me?.code!=undefined ? "start":""}`}/>
                         </div>
-                        <div className="line progress" onClick2={go_to_lesson}>
+                        <div className="line progress" onClick={go_to_lesson}>
                             <img src={linux} />
                             <p>Système</p>
                             <CheckCircleIcon className="status progress"/>
                         </div>
-                        <div className="line progress" onClick2={go_to_lesson}>
+                        <div className="line progress" onClick={go_to_lesson}>
                             <img src={helpdesk} />
                             <p>Help-Desk</p>
                             <CheckCircleIcon className="status progress"/>
                         </div>
-                        <div className="line progress" onClick2={go_to_lesson}>
+                        <div className="line progress" onClick={go_to_lesson}>
                             <img src={security} />
                             <p>Security</p>
                             <CheckCircleIcon className="status progress"/>
                         </div>
-                        <div className="line progress" onClick2={go_to_lesson}>
+                        <div className="line progress" onClick={go_to_lesson}>
                             <img src={networking} />
                             <p>Networking</p>
                             <CheckCircleIcon className="status progress"/>
                         </div>
-                        <div className="line progress" onClick2={go_to_lesson}>
+                        <div className="line progress" onClick={go_to_lesson}>
                             <img src={cloud} />
                             <p>Cloud</p>
                             <CheckCircleIcon className="status progress"/>
                         </div>
-                        <div className="line progress" onClick2={go_to_lesson}>
+                        <div className="line progress" onClick={go_to_lesson}>
                             <img src={ethical_hacking} />
                             <p>Ethical Hacking</p>
                             <CheckCircleIcon className="status progress"/>
