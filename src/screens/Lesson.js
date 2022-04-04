@@ -30,12 +30,16 @@ const Lesson=()=>{
         set_page(index);
     }
 
-    const chapter_clicked=(index)=>{
-        const el=document.querySelectorAll(".chapter");
+    const chapter_clicked=(module,index)=>{
+       const id=`${module}${index}`;
+
+        const el=document.querySelectorAll('.chapter');
+        
         for(var i=0; i<el.length; i++){
             el[i].classList.remove("active");
         }
-        el[index].classList.add("active");
+        document.querySelector("#"+id).classList.add("active");
+        
     }
 
     const data=[
@@ -96,15 +100,16 @@ const Lesson=()=>{
                                 const cat=item.category;
                                 const chapters=item.chapters;
                                 return(
-                                    <div key={i}>
+                                    <div key={i} className={`module${i}`}>
                                         <h3 style={{textAlign:"center"}}>{cat}</h3>
                                         {
                                             chapters.map((item2,i2)=>{
                                                 return(
                                                     <Chapter 
-                                                    key={`${i2}`} 
+                                                    key={`${i}${i2}`} 
                                                     item={item2} 
-                                                    click={chapter_clicked.bind(this,i2)} 
+                                                    id={`${i}${i2}`} 
+                                                    click={chapter_clicked.bind(this,`${i}`,`${i2}`)} 
                                                     />
                                                 )
                                             })
