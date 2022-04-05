@@ -1,4 +1,4 @@
-import logo from "../components/img/logo.png";
+import logo from "../components/img/logo4.jpeg";
 import "../styles/splash.scss";
 import { useEffect } from "react";
 import { useHistory } from "react-router-dom";
