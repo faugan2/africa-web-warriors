@@ -18,10 +18,14 @@ import {auth} from "../firebase_file";
 import Modal from "./Modal";
 import {useState,useEffect} from "react";
 import Login from "./Login";
+import { selectUser } from "../features/appSlice";
+import {useSelector} from "react-redux";
+
 
 const HomeContent=()=>{
     const history=useHistory();
     const [open,set_open]=useState(false);
+    const me=useSelector(selectUser);
 
     const close_modal=()=>{
         set_open(false);
@@ -48,7 +52,11 @@ const HomeContent=()=>{
                    </ol>
 
                    <div>
-                       <button onClick={start}>Commencez la formation</button>
+                       <button onClick={start}>
+                           {
+                               me==null ? "Inscrivez-vous aujourd'hui" : "Commencez la formation"
+                           }
+                           </button>
                    </div>
                </div>
                <div className="right">

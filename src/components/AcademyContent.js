@@ -28,10 +28,13 @@ import {auth} from "../firebase_file";
 import Modal from "./Modal";
 import {useState,useEffect} from "react";
 import Login from "./Login";
+import {useSelector} from "react-redux";
+import { selectUser } from "../features/appSlice";
 
 const HomeContent=()=>{
     const history=useHistory();
     const [open,set_open]=useState(false);
+    const me=useSelector(selectUser);
 
     const close_modal=()=>{
         set_open(false);
@@ -111,7 +114,11 @@ const HomeContent=()=>{
                         </h4>
 
                         <div className="line_start">
-                            <button onClick={start}>Commencez la formation</button>
+                            <button onClick={start}>
+                            {
+                               me==null ? "Inscrivez-vous aujourd'hui" : "Commencez la formation"
+                           }
+                            </button>
                         </div>
                     </p>
 
