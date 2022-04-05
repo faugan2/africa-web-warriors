@@ -44,7 +44,15 @@
                 &.active{
                      color:indianred;
                 }
+
+                >svg{
+                    &.active{
+                        color:indianred !important;
+                    }
+                }
             }
+
+            
         }
 
         &.user{

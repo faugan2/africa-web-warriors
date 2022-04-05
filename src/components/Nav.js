@@ -50,17 +50,17 @@ const Nav=({index})=>{
             </div>
             <div className="menu">
                 <Link to="/academy" className={`${index==1? "active":""}`}>
-                    <SchoolIcon style={{color:"gray"}}/>
+                    <SchoolIcon style={{color:"gray"}} className={`${index==1? "active":""}`} />
                     <a>ACADEMIE</a>
                 </Link>
 
                 <Link to="/security" className={`${index==2? "active":""}`}>
-                    <VpnLockIcon style={{color:"gray"}}/>
+                    <VpnLockIcon style={{color:"gray"}} className={`${index==2? "active":""}`}/>
                     <a>SECURITE-RESEAU</a>
                 </Link>
 
                 <Link to="/softwares" className={`${index==3? "active":""}`}>
-                    <AppsIcon style={{color:"gray"}}/>
+                    <AppsIcon style={{color:"gray"}} className={`${index==3? "active":""}`}/>
                     <a>LOGICIELS</a>
                 </Link>
             </div>
