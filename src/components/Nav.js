@@ -16,7 +16,7 @@ import { useSelector } from "react-redux";
 import {selectUser,selectLoaded} from "../features/appSlice";
 import Menu from "./Menu";
 import logo2 from "./img/logo2.jpeg";
-import logo3 from "./img/logo3.jpeg";
+import logo3 from "./img/logo33.jpg";
 
 const Nav=({index})=>{
     const history=useHistory();

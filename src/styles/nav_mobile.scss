@@ -2,13 +2,22 @@
     .nav {
        
       >.logo{
-          margin-left: 0 !important;
+          margin-left: 1rem !important;
           >img{
-              width:60px;
+              width:40px !important;
+              height:40px !important;
           }
       }
       >.menu{
+          
+          margin-right: 0 !important;
+          margin-left: 0 !important;
           >a{
+              margin-right: 0 !important;
+              
+              flex:1;
+              display:flex;
+              justify-content:center;
               >a{
                   display:none;
               }
