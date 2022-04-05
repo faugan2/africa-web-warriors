@@ -44,7 +44,7 @@ const HomeContent=()=>{
                        <li><strong className="cle">Sécurisez</strong> votre 
                         <strong className="cle"> réseau informatique</strong> et les applications qui s'y trouvent,</li>
                        <li><strong className="cle">Concevez</strong> et <strong className="cle">réalisez</strong> vos idées d'applications ou logicielles (web, mobile, desktop, etc...),</li>
-                       <li><strong className="cle">Formez-vous</strong> en sécurité informatique (Hacking Ethique).</li>
+                       <li><strong className="cle">Formez-vous</strong> en sécurité informatique (cybersécurité).</li>
                    </ol>
 
                    <div>
@@ -60,24 +60,28 @@ const HomeContent=()=>{
                 <div>
                     <SchoolIcon style={{fontSize:"4rem"}}/>
                     <h2>Accademie</h2>
-                    <p>Devenez <strong>hackeur éthique</strong> ou testeur d'application ou préparez-vous pour avoir votre 
-                        certificat en CCNA, Network+, AWS Cloud Practitioner,Pentest+, Comptia A+ .
-                        Vous allez apprendre aussi sur la programmation et le système linux qui representent le fondement 
-                        même du hacking éthique.
+                    <p>
+                        Devenez <strong>professionnels de la cybersécurité</strong> capables de protéger le réseau d'une entreprise.  
+                        <strong> A2W</strong> vous propose une formation pour vous permettre  d'acquérir les connaissances nécessaires pour faire 
+                        carrière dans la lutte contre la cybercriminalité.
                     </p>
                 </div>
                 <div>
                     <VpnLockIcon style={{fontSize:"4rem"}} />
                     <h2>Sécurité des réseaux</h2>
                     <p>
-                        Nous mettons en place des mésures de sécurité pour votre réseau informatique.
+                    Le monde hyperconnecté d'aujourd'hui favorise <strong>les cyberattaques</strong>. 
+                    Que vous soyez attiré par le désire de fiabiliser votre réseau ou que vous cherchiez simplement à 
+                    vous protéger en ligne et sur les réseaux sociaux, <strong>A2W</strong> vous aide à atteindre cet objectif.
                     </p>
                 </div>
                 <div>
                     <AppsIcon style={{fontSize:"4rem"}}/>
                     <h2>Solutions Logicielles</h2>
                     <p>
-                        Nous vous aidons dans la réalisation de vos applications web, mobile, desktop, etc...
+                        Nous vous aidons dans la réalisation de vos applications web, mobile, desktop, etc...<br />
+                        Nous pouvons aussi prendre vos applications existantes et effectuer des tests de sécurité pour vous 
+                        guarantir un niveau de sécurité élevé.
                     </p>
                 </div>
             </div>
