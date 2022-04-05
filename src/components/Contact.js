@@ -55,7 +55,7 @@ const Contact=()=>{
     }
     return (
         <div className="contact">
-            <h3>Nous contacter </h3>
+            <h2>Nous contacter </h2>
             <div className="line">
                 <label>Nom et Prénoms</label>
                 <div>
