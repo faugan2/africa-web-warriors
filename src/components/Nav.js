@@ -15,6 +15,8 @@ import {auth,db} from "../firebase_file";
 import { useSelector } from "react-redux";
 import {selectUser,selectLoaded} from "../features/appSlice";
 import Menu from "./Menu";
+import logo2 from "./img/logo2.jpeg";
+import logo3 from "./img/logo3.jpeg";
 
 const Nav=({index})=>{
     const history=useHistory();
@@ -44,7 +46,7 @@ const Nav=({index})=>{
     return(
         <div className="nav">
             <div className="logo">
-                <img src={logo} onClick={go_to_home}/>
+                <img src={logo3} onClick={go_to_home}/>
             </div>
             <div className="menu">
                 <Link to="/academy" className={`${index==1? "active":""}`}>

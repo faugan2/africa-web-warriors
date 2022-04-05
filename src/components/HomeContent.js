@@ -39,7 +39,7 @@ const HomeContent=()=>{
         <div className="home_content">
            <div className="top">
                <div className="left">
-                   <h1>AFRICA WEB WARRIRORS</h1>
+                   <h1>AFRICA WEB WARRIORS</h1>
                    <ol>
                        <li><strong className="cle">Sécurisez</strong> votre 
                         <strong className="cle"> réseau informatique</strong> et les applications qui s'y trouvent,</li>
