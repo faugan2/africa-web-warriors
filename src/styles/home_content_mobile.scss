@@ -50,6 +50,12 @@
                grid-template-columns: 1fr 1fr;
                grid-gap:1rem !important;
                margin:0 !important;
+               >a{
+                
+                display:flex;
+                justify-content:center;
+                align-items: center;
+               }
            }
        }
     }
