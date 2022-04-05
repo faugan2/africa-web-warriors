@@ -1,4 +1,5 @@
 import "../styles/unlock.scss";
+import "../styles/unlock_mobile.scss";
 import paypal from "./img/paypal.jpg";
 import carte_visa from "./img/carte_visa.png";
 import tmoney from "./img/tmoney.png";
@@ -65,7 +66,7 @@ const Unlock=({click})=>{
                 type="text" 
                 placeholder="------" 
                 maxLength={6} 
-                autoFocus
+                autoFocus={false}
                 onChange={e=>set_code(e.target.value)}
                 ref={ref}
                 />
