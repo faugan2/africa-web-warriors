@@ -54,14 +54,14 @@ const HomeContent=()=>{
             <div className="top">
                 <div>
                     <p>
-                        Nous formons des gueriers du web qui sont capables de sécuriser un réseau informatique,
+                        Nous formons <strong>des gueriers du web</strong> qui sont capables de sécuriser un réseau informatique,
                         tester le réseau et les applications qui y sont hébergées afin de trouver des solutions 
                         liées aux éventuelles failles trouvées sur le réseau.
                     </p>
 
                     <p>
                         <h3>
-                        A2W offre à cet effet, une formation  qui englobe les domaines suivants:
+                        A2W offre à cet effet, une formation en <strong style={{color:"indianred"}}>cybersécurité</strong> qui englobe les domaines suivants:
                         </h3>
                         <div>
                             <button>

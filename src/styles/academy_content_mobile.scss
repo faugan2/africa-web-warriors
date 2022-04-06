@@ -13,6 +13,16 @@
                     >div{
                         display:grid ;
                         grid-template-columns: 1fr 1fr;
+                        >button{
+                            align-items: center !important;
+                            justify-content:center !important;
+                            >h4{
+                                text-align:center !important;
+                            }
+                            >p{
+                                text-align: center !important;
+                            }
+                        }
                     }
 
                     >h4{
