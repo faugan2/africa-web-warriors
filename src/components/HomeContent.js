@@ -97,7 +97,7 @@ const HomeContent=()=>{
             </div>
 
             <div className="partenaires">
-                <h2>Ils nous font confiances</h2>
+                <h1>Ils nous font confiances</h1>
                 <div>
                     <a><img src={psg} /></a>
                     <a><img src={jkep} /></a>

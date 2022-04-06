@@ -21,6 +21,7 @@ const HomeContent=()=>{
             
             <div className="top">
                 <div>
+                    <h1>A2W - SOFT</h1>
                     <h2>
                         Avez-vous une idée d'application que vous voulez réaliser ?
                     </h2>

@@ -9,10 +9,14 @@
         min-height:80vh;
         width:80%;
         margin:auto;
-        margin-top: 2rem;
+        
         display:flex;
         >div{
             flex:1;
+            >h1{
+                color:indianred;
+                text-align: center;
+            }
 
             >h2{
                 text-align:center;

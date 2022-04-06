@@ -20,8 +20,9 @@ const HomeContent=()=>{
         <div className="security_content">
             
             <div className="top">
+            <h1>A2W - SECURITE</h1>
                 <div>
-
+                    
                     <div>
                         <RouterIcon id="internet" />
                         <h2>Internet</h2>

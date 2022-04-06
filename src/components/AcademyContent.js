@@ -53,6 +53,7 @@ const HomeContent=()=>{
             
             <div className="top">
                 <div>
+                    <h1>A2W - ACADEMIE</h1>
                     <p>
                         Nous formons <strong>des gueriers du web</strong> qui sont capables de sécuriser un réseau informatique,
                         tester le réseau et les applications qui y sont hébergées afin de trouver des solutions 
