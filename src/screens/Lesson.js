@@ -14,6 +14,7 @@ import LessonQuiz from "../components/LessonQuiz";
 import LessonTask from "../components/LessonTask";
 import LessonNote from "../components/LessonNote";
 
+
 const Lesson=()=>{
     const history=useHistory();
     const [page,set_page]=useState(0);

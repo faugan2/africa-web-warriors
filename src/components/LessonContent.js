@@ -6,7 +6,7 @@ const LessonContent=()=>{
     return(
         <div className="chapter_content">
 
-             <video src={media} controls autoPlay ></video>
+             <video src={media} controls autoPlay={false} ></video>
         </div>
     )
 }
