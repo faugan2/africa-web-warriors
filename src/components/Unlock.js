@@ -89,7 +89,7 @@ const Unlock=({click})=>{
                 </ol>
                 <p>Une fois le payement effectué, envoyez-nous sur WhatsApp(
                     <strong>+228 92 95 08 03</strong>) le reçu à fin de recevoir votre code 
-                    de déblocage
+                    de déblocage.
                 </p>
                 
             </div>

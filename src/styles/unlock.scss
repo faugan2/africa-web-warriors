@@ -48,14 +48,18 @@
         flex-direction: column;
 
         >p{
-            font-size: 0.8rem;
+            font-size: 0.7rem;
             margin:1rem;
             
         }
 
         >ol{
             margin:1rem;
-            font-size: 0.8rem;
+            font-size: 0.7rem;
+            margin:0;
+            >li{
+                margin-bottom: 0.5rem;
+            }
         }
 
         
