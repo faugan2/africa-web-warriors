@@ -13,6 +13,8 @@ import psg from "./img/psg.png";
 import jsql from "./img/jsql.png";
 import foaf from "./img/foaf.png";
 import sici from "./img/sici.jpg";
+import jkep from "./img/jkep.png";
+
 import {useHistory} from "react-router-dom";
 import {auth} from "../firebase_file";
 import Modal from "./Modal";
@@ -98,6 +100,7 @@ const HomeContent=()=>{
                 <h2>Ils nous font confiances</h2>
                 <div>
                     <a><img src={psg} /></a>
+                    <a><img src={jkep} /></a>
                     <a><img src={adesco} /></a>
                     <a><img src={assitchape} /></a>
                     <a><img src={get_driver} /></a>
