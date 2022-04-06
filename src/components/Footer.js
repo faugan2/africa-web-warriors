@@ -9,7 +9,7 @@ import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import PhoneIcon from '@material-ui/icons/Phone';
-
+import RoomIcon from '@material-ui/icons/Room';
 const Footer=()=>{
     return(
         <div className="footer">
@@ -28,6 +28,21 @@ const Footer=()=>{
                     <li><Link to="/terms-conditions"><a>Termes & Conditions</a></Link></li>
                 </ol>
             </div>
+
+            <div>
+                       
+                <h1>Canada</h1>
+                <p>2325 Hurontario Street Suite 315 Mississauga ON L5A 4K4</p>
+                <p><PhoneIcon /> <span>647 243 5111</span></p>
+            </div>
+
+            <div>
+                       
+                       <h1>Togo</h1>
+                       <p>Lomé - Togo</p>
+                       <p><PhoneIcon /> <span>+228 92 95 08 03</span></p>
+                   </div>
+
             <div>
                 <h1>Trouvez-nous sur:</h1>
                 <div className="socials">
@@ -46,9 +61,13 @@ const Footer=()=>{
                     </p>
 
                     <p>
-                        <PhoneIcon />
+                        <WhatsAppIcon />
                         <span>+228 92 95 08 03</span>
                     </p>
+                   
+                   
+                   
+
                 </div>
             </div>
         </div>

@@ -4,12 +4,12 @@
     
     width: 100%;
     display:flex;
-    align-items: center;
     justify-content: space-between;
 
     >div{
         margin:2rem;
         margin-top: 0.5rem;
+        flex:1;
 
         >h1{
             font-size: 1.5rem;
@@ -34,6 +34,34 @@
                     }
                 }
             }
+        }
+
+        >p{
+            margin:0;
+            font-size: 0.8rem;
+            display:flex;
+            align-items: center;
+            gap:0.5rem;
+        }
+
+        >.contacts{
+            >div{
+                
+                margin-top: 1rem;
+                >h3{
+                    margin:0;
+                    font-size: 0.7rem;
+                }
+                >p{
+                    margin:0;
+                    font-size: 0.7rem;
+                    display:flex;
+                    align-items: center;
+                    gap:0.5rem;
+                    margin-top: 0.5rem;
+                }
+            }
+            
         }
 
         >div{
