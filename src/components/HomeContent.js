@@ -71,7 +71,7 @@ const HomeContent=()=>{
                     <SchoolIcon style={{fontSize:"4rem"}}/>
                     <h2>Accademie</h2>
                     <p>
-                        Devenez <strong>professionnels de la cybersécurité</strong> capables de protéger le réseau d'une entreprise.  
+                        Devenez <strong>professionnel de la cybersécurité</strong> pour être capable de protéger le réseau d'une entreprise.  
                         <strong> A2W</strong> vous propose une formation pour vous permettre  d'acquérir les connaissances nécessaires pour faire 
                         carrière dans la lutte contre la cybercriminalité.
                     </p>
