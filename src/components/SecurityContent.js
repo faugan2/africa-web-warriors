@@ -26,7 +26,7 @@ const HomeContent=()=>{
                     <div>
                         <RouterIcon id="internet" />
                         <h2>Internet</h2>
-                        <p>L'utilisation de l'internet devient de plus en plus présent dans nos vie avec beaucoup d'avantages 
+                        <p>L'utilisation de l'internet devient de plus en plus présent dans nos vies avec beaucoups d'avantages 
                         que nous connaissons tous. Cela nous facilite la vie et nous permet de communiquer facilement et rendre 
                         certaines de nos tâches quotidiennes plus agréables.</p>
                     </div>

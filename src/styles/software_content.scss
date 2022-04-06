@@ -19,11 +19,22 @@
             }
 
             >h2{
-                text-align:center;
+                text-align:left;
+            }
+
+            >ol{
+                
+                margin:0;
+                padding:0.8rem;
+                >li{
+                    >strong{
+                        color:indianred;
+                    }
+                }
             }
 
             >.help{
-                text-align: center;
+                text-align: left;
                 color:green;
                 font-weight: bold;
                 margin-bottom: 2rem;
