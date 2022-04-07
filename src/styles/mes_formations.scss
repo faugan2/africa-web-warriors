@@ -9,6 +9,7 @@
         align-items: center;
         justify-content:space-between;
         margin:1rem;
+        width:50vw;
         >button{
             background-color:indianred;
             padding:0.5rem;
@@ -38,7 +39,7 @@
     }
 
     >.content{
-        border:1px solid red;
+       
         margin:1rem;
 
         >.no_data{
@@ -61,6 +62,44 @@
                 font-weight: bold;
                 width:200px;
                 margin-top: 1rem;
+            }
+        }
+
+        >.lines{
+            
+            >.line{
+               
+                display:flex;
+                align-items: center;
+                border-bottom: 1px solid silver;
+                padding-bottom: 1rem;
+                cursor: pointer;
+
+                &:hover{
+                    opacity: 0.6;
+                }
+                >div{
+                    &:nth-child(1){
+                       
+                        flex:1;
+                    }
+                    >h2{
+                        font-size: 1rem;
+                        margin:0;
+                    }
+                    >p{
+                        margin:0;
+                    }
+
+                    >button{
+                        cursor: pointer;
+                        border:none;
+                        background-color:black;
+                        color:white;
+                        margin-right: 2rem;
+                    }
+                }
+                
             }
         }
     }

@@ -7,12 +7,39 @@ import Modal from "./Modal";
 import FormationsList from "./FormationsList";
 import {useState,useEffect} from "react";
 import Unlock from "./Unlock";
+import {useSelector} from "react-redux";
+import {selectAchats,selectUser} from "../features/appSlice";
+import {data as formations} from "./formations";
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+const MesFormations=({click})=>{
+    const achats=useSelector(selectAchats);
+    const me=useSelector(selectUser);
 
-const MesFormations=()=>{
     const [open,set_open]=useState(false);
     const [open_code,set_open_code]=useState(false);
+    const [data,set_data]=useState(null);
 
-    const [data,set_data]=useState([1,2,89,5,36]);
+    useEffect(()=>{
+        if(achats==null) return;
+        const res=achats.map((item)=>{
+            const achat=item.formation;
+            const formation=formations.filter((item2)=>{
+                return item2.id==achat;
+            })
+
+            if(item.user==me?.key){
+                return {...item,formation:formation[0]}
+            }else{
+                return null;
+            }
+        })
+
+        const res2=res.filter((item)=>{
+            return item!=null;
+        })
+       /// console.log("all data is ",res2);
+        set_data(res2);
+    },[achats])
     const close_modal=()=>{
         set_open(false);
     }
@@ -43,17 +70,28 @@ const MesFormations=()=>{
 
                 {
                     (data!=null && data.length>0) && 
-                    <di>
+                    <div className="lines">
                         {
-                            data.map((item,i)=>{
+                            data?.map((item,i)=>{
                                 return(
-                                    <div key={i}>
-                                        {item}
+                                    <div key={item.key} className="line" onClick={click.bind(this,item.formation.id)}>
+                                        <div>
+                                            <h2>{item.formation.titre}</h2>
+                                            <p>
+                                                {item.formation.tech}
+                                            </p>
+                                        </div>
+                                       
+                                        <div>
+                                            <button>
+                                                <ArrowForwardIosIcon />
+                                            </button>
+                                        </div>
                                     </div>
                                 )
                             })
                         }
-                    </di>
+                    </div>
                 }
             </div>
             

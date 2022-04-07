@@ -35,10 +35,10 @@ const Splash=()=>{
                         data.key=key;
                         achats.push(data);
                     })
-                    dispatch(setAchats);
+                    dispatch(setAchats(achats));
 
                 })
-                //history.push("/home")
+                history.push("/home")
             }
         })
         

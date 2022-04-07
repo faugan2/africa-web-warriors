@@ -78,15 +78,7 @@ const Profile=()=>{
     }
 
     const go_to_lesson=(index)=>{
-       if(me?.code==undefined){
-        set_open_unlock(true);
-       }else{
-        if(index==0){
-            history.push("/lesson");
-        }
-        
-       }
-        
+        history.push("/lesson");
     }
     return(
         <div className="profile">
@@ -128,7 +120,7 @@ const Profile=()=>{
 
                     </div>
 
-                   <MesFormations />
+                   <MesFormations click={go_to_lesson} />
 
                     <div className="matieres" style={{display:"none"}}>
                         <div className="line progress" onClick={go_to_lesson.bind(this,0)}>
