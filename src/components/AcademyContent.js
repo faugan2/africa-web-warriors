@@ -31,6 +31,10 @@ import Login from "./Login";
 import {useSelector} from "react-redux";
 import { selectUser } from "../features/appSlice";
 
+
+import Cartes from "./Cartes";
+
+
 const HomeContent=()=>{
     const history=useHistory();
     const [open,set_open]=useState(false);
@@ -124,23 +128,8 @@ const HomeContent=()=>{
                     </p>
 
                     <div>
-                        <h3 style={{textAlign:"center"}}>Nous avons aussi des formations à la carte dans les secteurs suivants:</h3>
-                        <div className="cartes">
-                            <div>
-                                <PublicIcon style={{fontSize:"2rem",color:"gray"}} />
-                                <h2>Web</h2>
-                            </div>
-
-                            <div>
-                                <PhoneAndroidIcon style={{fontSize:"2rem",color:"gray"}} />
-                                <h2>Mobile</h2>
-                            </div>
-
-                            <div>
-                                <DesktopWindowsIcon style={{fontSize:"2rem",color:"gray"}} />
-                                <h2>Desktop</h2>
-                            </div>
-                        </div>
+                        <Cartes />
+                        
                     </div>
                 </div>
             </div>

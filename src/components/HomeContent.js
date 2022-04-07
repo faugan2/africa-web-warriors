@@ -22,7 +22,7 @@ import {useState,useEffect} from "react";
 import Login from "./Login";
 import { selectUser } from "../features/appSlice";
 import {useSelector} from "react-redux";
-
+import Cartes from "./Cartes";
 
 const HomeContent=()=>{
     const history=useHistory();
@@ -95,6 +95,11 @@ const HomeContent=()=>{
                     </p>
                 </div>
             </div>
+
+            <div className="formations" style={{width:"80vw",margin:"auto"}}>
+                <Cartes />
+            </div>            
+            
 
             <div className="partenaires">
                 <h1>Ils nous font confiances</h1>

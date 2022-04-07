@@ -1,0 +1,65 @@
+.cartes{
+    display:flex;
+    
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    >h1{
+        text-align:center;
+    }
+    >div{
+        flex:1;
+        display:flex;
+        align-items: center;
+        margin-bottom: 2rem;
+        >img{
+            width:200px;
+            height:200px;
+            margin-right: 1rem;
+        }
+        >div{
+            text-align: left;
+            >p{
+                margin:0;
+                font-size:1rem;
+
+                &.tech{
+                    margin-top: 0.5rem;
+                    font-size: 0.8rem;
+                    >span{
+                        font-weight: bold;
+                    }
+                }
+                &.delai{
+                    font-size: 0.8rem;
+                    >span{
+                        font-weight: bold;
+                    }
+                }
+                &.prix{
+                    font-size: 0.8rem;
+                    >span{
+                        font-weight: bold;
+                    }
+                }
+                &.bonus{
+                    font-size: 0.8rem;
+                    >span{
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            >button{
+                padding:0.5rem 1rem;
+                border:none;
+                background-color:indianred;
+                color:white;
+                font-weight: bold;
+                margin-top: 0.5rem;
+                cursor: pointer;
+            }
+        }
+        
+    }
+}
