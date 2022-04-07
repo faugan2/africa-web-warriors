@@ -12,6 +12,7 @@ const data=[
         delai:"2 mois",
         cout:"50 000 FCFA",
         bonus:"2 livres offerts",
+        photo:"https://firebasestorage.googleapis.com/v0/b/africa-web-warriors.appspot.com/o/images%2Fappli_web.png?alt=media&token=d570c8e6-9599-4c9a-8633-939dae55e906"
     },
     {
         id:"2",
@@ -29,6 +30,7 @@ const data=[
         delai:"1 mois",
         cout:"30 000 FCFA",
         bonus:"",
+        photo:"https://firebasestorage.googleapis.com/v0/b/africa-web-warriors.appspot.com/o/images%2Fappli_mobile.png?alt=media&token=8d8e7d15-fd05-4465-a5c0-7a93f4791644"
     },
     {
         id:"3",
@@ -46,6 +48,7 @@ const data=[
         delai:"1 mois",
         cout:"30 000 FCFA",
         bonus:"",
+        photo:"https://firebasestorage.googleapis.com/v0/b/africa-web-warriors.appspot.com/o/images%2Fappli_desktop.png?alt=media&token=1ed032ce-1d76-4469-99db-33fa2a80903e"
     },
     {
         id:"4",
@@ -62,6 +65,7 @@ const data=[
         delai:"9 mois",
         cout:"150 000 FCFA",
         bonus:"",
+        photo:"https://firebasestorage.googleapis.com/v0/b/africa-web-warriors.appspot.com/o/images%2Fethical_hacking.jpeg?alt=media&token=38fe87fd-bc72-4362-8606-ae9ca9387311"
     }
 ]
 
