@@ -111,6 +111,14 @@ const Unlock=({click})=>{
                     <strong>+228 92 95 08 03</strong>) le reçu à fin de recevoir votre code 
                     de déblocage.
                 </p>
+
+                <p style={{}}>
+                    <i>
+                    Si vous-êtes au <strong> Togo</strong>, vous avez la possibilité de payer par 
+                    <strong> TMONEY</strong> sur le numéro 
+                    <strong> 91 56 75 90</strong>
+                    </i>
+                </p>
                 
             </div>
 
