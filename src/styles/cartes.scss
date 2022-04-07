@@ -59,6 +59,10 @@
                 font-weight: bold;
                 margin-top: 0.5rem;
                 cursor: pointer;
+
+                &.buy{
+                    background-color:green;
+                }
             }
         }
         
