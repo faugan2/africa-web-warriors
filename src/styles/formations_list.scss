@@ -2,4 +2,41 @@
     width:min(500px,80vw);
     min-height: 70vh;
     max-height: 70vh;
+    overflow-y: auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    >.line{
+        
+        >h2{
+            text-align:center;
+            font-size:1rem;
+        }
+
+        >div{
+            font-size: 0.8rem;
+        }
+        >p{
+            font-size: 0.8rem;
+            margin:0;
+            >span{
+                font-weight: bold;
+            }
+            margin-bottom: 0.3rem;
+            &.tech{
+                margin-top: 1rem;
+            }
+        }
+
+        >button{
+            background-color:indianred;
+            padding:0.8rem;
+            width:100%;
+            margin:auto;
+            border:none;
+            color:white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
 }
