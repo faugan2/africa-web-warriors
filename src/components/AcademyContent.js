@@ -8,7 +8,7 @@ import AppsIcon from '@material-ui/icons/Apps';
 
 import adesco from "./img/adesco.jpg";
 import assitchape from "./img/assitchape.png";
-import get_driver from "./img/get_driver.png";
+import get_driver from "./img/get_driver.jpeg";
 import psg from "./img/psg.png";
 import jsql from "./img/jsql.png";
 import PhoneAndroidIcon from '@material-ui/icons/PhoneAndroid';
