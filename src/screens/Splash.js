@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import {auth,db} from "../firebase_file";
 import { useDispatch } from "react-redux";
-import {setUser,setLoaded} from "../features/appSlice";
+import {setUser,setLoaded,setAchats} from "../features/appSlice";
 
 const Splash=()=>{
     const history=useHistory();
@@ -26,7 +26,19 @@ const Splash=()=>{
                     dispatch(setUser(data));
                    
                 })
-                history.push("/home")
+
+                db.collection("achats").onSnapshot((snap)=>{
+                    const achats=[];
+                    snap.docs.map((doc)=>{
+                        const key=doc.id;
+                        const data=doc.data();
+                        data.key=key;
+                        achats.push(data);
+                    })
+                    dispatch(setAchats);
+
+                })
+                //history.push("/home")
             }
         })
         

@@ -7,17 +7,30 @@ import flooz from "./img/flooz.jpg";
 import {useState,useEffect,useRef} from "react";
 import {auth,db,} from "../firebase_file";
 import CircularProgress from '@material-ui/core/CircularProgress';
-import {selectUser} from "../features/appSlice";
+import {selectUser,selectAjouter} from "../features/appSlice";
 import {useSelector} from "react-redux";
 import logo from "./img/logo.png";
+import {data} from "./formations";
+import firebase from "firebase";
 
 const Unlock=({click})=>{
 
     const me=useSelector(selectUser);
+    const ajouter=useSelector(selectAjouter);
+    
+    useEffect(()=>{
+        const res=data?.filter((item)=>{
+            return item.id==ajouter;
+        })
+        if(res.length>0){
+            set_prix(res[0].cout);
+        }
+    },[ajouter])
 
     const [code,set_code]=useState("");
     const [progress,set_progress]=useState(false);
     const [alerte,set_alerte]=useState("");
+    const [prix,set_prix]=useState("");
     const ref=useRef(null);
 
     useEffect(()=>{
@@ -27,7 +40,10 @@ const Unlock=({click})=>{
         ref.current.readOnly=true;
         ref.current.style.backgroundColor="whitesmoke";
 
-        db.collection("codes").where("code","==",code).get().then((snap)=>{
+        db.collection("codes")
+        .where("code","==",code)
+        .where("formation","==",ajouter)
+        .get().then((snap)=>{
             if(snap.docs.length==0){
                 ref.current.readOnly=false;
                 ref.current.style.backgroundColor="white";
@@ -35,19 +51,23 @@ const Unlock=({click})=>{
                 set_alerte("Code erronné");
             }else{
 
-               db.collection("users").doc(me?.key).update({code},{merge:true}).then(()=>{
+                db.collection("achats").add({
+                    user:me?.key,
+                    date:firebase.firestore.FieldValue.serverTimestamp(),
+                    formation:ajouter,
+                    code
+                }).then(()=>{
                     ref.current.readOnly=false;
                     ref.current.style.backgroundColor="white";
                     set_progress(false);
                     set_alerte("Code valide");
                     click();
-               }).catch((err)=>{
-                ref.current.readOnly=false;
-                ref.current.style.backgroundColor="white";
-                set_progress(false);
-                set_alerte(err.message);
-               })
-
+                }).catch((err)=>{
+                    ref.current.readOnly=false;
+                    ref.current.style.backgroundColor="white";
+                    set_progress(false);
+                    set_alerte(err.message);
+                })
                
             }
         }).catch((err)=>{
@@ -85,7 +105,7 @@ const Unlock=({click})=>{
                     <li>Nom du bénéficiaire: <strong>BIDI KODJO FOGAN</strong></li>
                     <li>Pays du bénéficiaire: <strong>TOGO</strong></li>
                     <li>Contact du bénéficiaire: <strong>+228 92 95 08 03</strong></li>
-                    <li>Montant à envoyer: <strong>$260 (155 000 CFA)</strong></li>
+                    <li>Montant à envoyer: <strong>{prix}</strong></li>
                 </ol>
                 <p>Une fois le payement effectué, envoyez-nous sur WhatsApp(
                     <strong>+228 92 95 08 03</strong>) le reçu à fin de recevoir votre code 

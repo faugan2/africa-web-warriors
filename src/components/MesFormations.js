@@ -6,12 +6,18 @@ import no_data from "./img/no_data.jpg";
 import Modal from "./Modal";
 import FormationsList from "./FormationsList";
 import {useState,useEffect} from "react";
+import Unlock from "./Unlock";
 
 const MesFormations=()=>{
     const [open,set_open]=useState(false);
+    const [open_code,set_open_code]=useState(false);
+
     const [data,set_data]=useState([1,2,89,5,36]);
     const close_modal=()=>{
         set_open(false);
+    }
+    const close_modal_code=()=>{
+        set_open_code(false);
     }
     return(
         <div className="mes_formations">
@@ -52,7 +58,10 @@ const MesFormations=()=>{
             </div>
             
 
-            {open==true && <Modal click={close_modal} content={<FormationsList />} />}
+            {open==true && <Modal click={close_modal} content={<FormationsList click={close_modal} 
+            open_code={()=>{set_open_code(true)}}
+            />} />}
+            {open_code==true && <Modal click={close_modal_code} content={<Unlock click={close_modal_code} />} />}
         </div>
     );
 }
