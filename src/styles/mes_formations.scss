@@ -1,0 +1,67 @@
+.mes_formations{
+    
+    >h1{
+        font-size: 1.5rem;
+        margin-left: 2rem;
+    }
+    >.top{
+        display:flex;
+        align-items: center;
+        justify-content:space-between;
+        margin:1rem;
+        >button{
+            background-color:indianred;
+            padding:0.5rem;
+            border:none;
+            color:white;
+            font-weight: bold;
+            display:flex;
+            align-items: center;
+            gap:0.5rem;
+            cursor: pointer;
+        }
+
+        >.line{
+            border-bottom:1px solid black;
+            flex:1;
+            margin-left: 1rem;
+            margin-right:1rem;
+            display:flex;
+            align-items: center;
+            >input{
+                flex:1;
+                border:none;
+                outline:none;
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    >.content{
+        border:1px solid red;
+        margin:1rem;
+
+        >.no_data{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            >img{
+                width: 100px;
+            }
+            >p{
+                font-size: 0.8rem;
+                text-align: center;
+            }
+            >button{
+                padding:1rem;
+                background-color:black;
+                color:white;
+                border:none;
+                cursor: pointer;
+                font-weight: bold;
+                width:200px;
+                margin-top: 1rem;
+            }
+        }
+    }
+}

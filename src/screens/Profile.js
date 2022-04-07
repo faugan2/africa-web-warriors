@@ -25,6 +25,7 @@ import EditUsername from "../components/EditUsername";
 import {useHistory} from "react-router-dom";
 
 import Unlock from "../components/Unlock";
+import MesFormations from "../components/MesFormations";
 
 
 const Profile=()=>{
@@ -109,26 +110,27 @@ const Profile=()=>{
                             }}><EditIcon /></button>
                         </div>
 
-                        {me?.code==undefined && <div className="zone_deblocage">
+                        {/*me?.code==undefined && <div className="zone_deblocage">
                             <button onClick={e=>{
                                 set_open_unlock(true);
                             }}>Debloquez les cours</button>
-                        </div>
+                        </div>*/
                         }
 
-                    {me?.code!=undefined && <div className="zone_deblocage ">
+                    {/*me?.code!=undefined && <div className="zone_deblocage ">
                             <button className="code">
                                 <CheckCircleIcon />
                                 Compte Actif
                             </button>
-                        </div>
+                        </div>*/
                         }
 
 
                     </div>
 
+                   <MesFormations />
 
-                    <div className="matieres">
+                    <div className="matieres" style={{display:"none"}}>
                         <div className="line progress" onClick={go_to_lesson.bind(this,0)}>
                             <img src={programmation} />
                             <p>Programmation</p>

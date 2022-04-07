@@ -88,6 +88,10 @@
                 }
             }
 
+            >.mes_formations{
+                flex:1;
+            }
+
             >.matieres{
                 
                flex:1;
@@ -97,6 +101,7 @@
                 grid-template-columns: 20% 20% 20% 20%;
                 grid-gap:1rem;
                 margin-left: 5%;
+               
                 >.line{
                     display:flex;
                     flex-direction: column;

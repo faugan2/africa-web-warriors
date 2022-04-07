@@ -1,0 +1,18 @@
+@media only screen and (max-width: 600px) {
+    .mes_formations{
+       
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        >h1{
+            text-align:center;
+        }
+        >.top{
+            flex-direction: column;
+            gap:0.5rem;
+
+            >.line{
+                width:min(400px,100%);
+            }
+        }
+    }
+}
