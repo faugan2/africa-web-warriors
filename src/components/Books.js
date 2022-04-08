@@ -17,7 +17,7 @@ const Books=()=>{
                 books.map((item,i)=>{
 
                     return(
-                        <div key={i}>
+                        <div key={i} onClick={contact_whatsap}>
                             {i==0 && <img src={module1} />}
                             {i==1 && <img src={module2} />}
                             <p>{item.cout}</p>

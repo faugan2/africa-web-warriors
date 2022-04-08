@@ -9,7 +9,7 @@ const data=[
         Réalisez votre formation à distance, à votre rythme. 
         Vous serez accompagné par nos formateurs experts`,
         tech:"HTML, CSS, Javascript, Firebase, ReactJS",
-        delai:"2 mois",
+        delai:"3 mois",
         cout:"50 000 FCFA",
         bonus:"2 livres offerts",
         photo:"https://firebasestorage.googleapis.com/v0/b/africa-web-warriors.appspot.com/o/images%2Fappli_web.png?alt=media&token=d570c8e6-9599-4c9a-8633-939dae55e906"
@@ -27,7 +27,7 @@ const data=[
           mobile ou bien d’en optimiser des existantes. Il va développer et concevoir.
         `,
         tech:"React Native",
-        delai:"1 mois",
+        delai:"3 mois",
         cout:"30 000 FCFA",
         bonus:"",
         photo:"https://firebasestorage.googleapis.com/v0/b/africa-web-warriors.appspot.com/o/images%2Fappli_mobile.png?alt=media&token=8d8e7d15-fd05-4465-a5c0-7a93f4791644"
@@ -45,14 +45,14 @@ const data=[
         facilement nommée Electron ?<br/>
         Et bien bonne nouvelle, tu as trouvé LA formation qu’il te faut !`,
         tech:"Electron JS",
-        delai:"1 mois",
+        delai:"3 mois",
         cout:"30 000 FCFA",
         bonus:"",
         photo:"https://firebasestorage.googleapis.com/v0/b/africa-web-warriors.appspot.com/o/images%2Fappli_desktop.png?alt=media&token=1ed032ce-1d76-4469-99db-33fa2a80903e"
     },
     {
         id:"4",
-        titre:"cybersécurité (Hacking Ethique)",
+        titre:"Cybersécurité (Hacking Ethique)",
         description:`Bienvenue dans ce cours vidéo sur le hacking éthique !<br /><br />
 
         À travers celui-ci, vous allez apprendre beaucoup de concepts fondamentaux en sécurité informatique.<br /><br />
