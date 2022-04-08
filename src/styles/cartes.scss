@@ -11,7 +11,7 @@
     >div{
         flex:1;
         display:flex;
-        align-items: center;
+        
         margin-bottom: 2rem;
         >img{
             width:200px;
@@ -25,26 +25,29 @@
                 font-size:1rem;
 
                 &.tech{
-                    margin-top: 0.5rem;
-                    font-size: 0.8rem;
+                    margin-top: 1rem;
+                    font-size: 1rem;
                     >span{
                         font-weight: bold;
                     }
                 }
                 &.delai{
-                    font-size: 0.8rem;
+                    font-size: 1rem;
+                    margin-top: 0.5rem;
                     >span{
                         font-weight: bold;
                     }
                 }
                 &.prix{
-                    font-size: 0.8rem;
+                    font-size: 1rem;
+                    margin-top: 0.5rem;
                     >span{
                         font-weight: bold;
                     }
                 }
                 &.bonus{
-                    font-size: 0.8rem;
+                    font-size: 1rem;
+                    margin-top: 0.5rem;
                     >span{
                         font-weight: bold;
                     }
