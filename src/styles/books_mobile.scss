@@ -1,0 +1,16 @@
+@media only screen and (max-width: 768px) {
+    .books{
+        width:80vw;
+        >div{
+            
+            flex-direction: column;
+            
+            >div{
+                margin-bottom: 2rem;
+                border:1px solid silver;
+                padding:1rem;
+                background-color:whitesmoke;
+            }
+        }
+    }
+}

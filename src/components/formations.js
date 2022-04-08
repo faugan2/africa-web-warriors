@@ -69,4 +69,24 @@ const data=[
     }
 ]
 
-export {data};
+const books=[
+    {
+        id:"1",
+        titre:"Construire une application web avec Javascript et Firebase | TOME 1",
+        description:"",
+        tech:"HTML, CSS, Javascript, Firebase",
+        cout:"7000 FCFA",
+        photo:"https://firebasestorage.googleapis.com/v0/b/africa-web-warriors.appspot.com/o/images%"
+    },
+
+    {
+        id:"1",
+        titre:"Construire une application web avec Javascript et Firebase | TOME 2",
+        description:"",
+        tech:"Node JS, Firebase MongoDB, MYSQL",
+        cout:"7000 FCFA",
+        photo:"https://firebasestorage.googleapis.com/v0/b/africa-web-warriors.appspot.com/o/images%"
+    }
+];
+
+export {data,books};

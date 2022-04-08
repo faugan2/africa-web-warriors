@@ -23,6 +23,7 @@ import Login from "./Login";
 import { selectUser } from "../features/appSlice";
 import {useSelector} from "react-redux";
 import Cartes from "./Cartes";
+import Books from "./Books";
 
 const HomeContent=()=>{
     const history=useHistory();
@@ -98,6 +99,7 @@ const HomeContent=()=>{
 
             <div className="formations" style={{width:"80vw",margin:"auto"}}>
                 <Cartes />
+                <Books />
             </div>            
             
 
