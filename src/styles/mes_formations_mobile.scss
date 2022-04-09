@@ -17,13 +17,12 @@
 
         >.content{
             >.lines{
-                
+                grid-template-columns: 100%;
                 >.line{
                    
                     >div{
-                        >button{
-                            margin-right: 0;
-                        }
+                        min-height:0;
+                        width:95%;
                     }
                 }
             }

@@ -75,18 +75,21 @@ const MesFormations=({click})=>{
                             data?.map((item,i)=>{
                                 return(
                                     <div key={item.key} className="line" onClick={click.bind(this,item.formation.id)}>
+                                        <img src={item.formation.photo} />
                                         <div>
                                             <h2>{item.formation.titre}</h2>
                                             <p>
                                                 {item.formation.tech}
                                             </p>
+                                            <p>{
+                                                item.formation.cout
+                                            }</p>
+                                            <p>
+                                                {item.formation.delai}
+                                            </p>
                                         </div>
                                        
-                                        <div>
-                                            <button>
-                                                <ArrowForwardIosIcon />
-                                            </button>
-                                        </div>
+                                       
                                     </div>
                                 )
                             })

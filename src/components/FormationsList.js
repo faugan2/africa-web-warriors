@@ -4,6 +4,7 @@ import {data} from "./formations";
 import {useState,useEffect} from "react";
 import {useSelector,useDispatch} from "react-redux";
 import { setAjouter,selectAchats,selectUser } from "../features/appSlice";
+import {auth} from "../firebase_file";
 
 const FormationsList=({click,open_code})=>{
     const dispatch=useDispatch();

@@ -3,7 +3,7 @@ import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import { useSelector,useDispatch } from "react-redux";
-import {selectUser,selectLoaded,setUser} from "../features/appSlice";
+import {selectUser,selectLoaded,setUser, setAchats} from "../features/appSlice";
 import {useState,useEffect} from "react";
 import "../styles/menu.scss";
 import "../styles/menu_mobile.scss";
@@ -53,6 +53,7 @@ export default function SimpleMenu() {
         <MenuItem onClick={e=>{
             auth.signOut();
             dispatch(setUser(null));
+            dispatch(setAchats(null));
             handleClose();
         }}>Logout</MenuItem>
       </Menu>

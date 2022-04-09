@@ -66,38 +66,42 @@
         }
 
         >.lines{
+            display:grid;
+            grid-template-columns:22% 22% 22% 22% ;
+            gap:1rem;
             
             >.line{
                
                 display:flex;
+                flex-direction: column;
                 align-items: center;
-                border-bottom: 1px solid silver;
                 padding-bottom: 1rem;
                 cursor: pointer;
-
+                border:1Px solid silver;
+                border-radius: 5px;
+                >img{
+                  width:100%;
+                  height:200px;
+                  object-fit:cover;
+                    
+                }
+            
                 &:hover{
                     opacity: 0.6;
                 }
                 >div{
-                    &:nth-child(1){
-                       
-                        flex:1;
-                    }
+                    
+                    min-height:120px;
+                    padding:0.5rem;
                     >h2{
                         font-size: 1rem;
                         margin:0;
+                        margin-bottom: 0.5rem;
+                        
                     }
                     >p{
                         margin:0;
                         font-size: 0.8rem;
-                    }
-
-                    >button{
-                        cursor: pointer;
-                        border:none;
-                        background-color:black;
-                        color:white;
-                        margin-right: 2rem;
                     }
                 }
                 

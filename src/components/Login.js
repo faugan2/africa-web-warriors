@@ -6,7 +6,7 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 import {useState,useEffect} from "react";
 import {useHistory} from "react-router-dom";
 
-const Login=()=>{
+const Login=({click})=>{
     const [progress,set_progress]=useState(false);
     const [alerte,set_alerte]=useState("");
     const history=useHistory();
@@ -39,7 +39,7 @@ const Login=()=>{
                 })
                 
                 btn.disabled=false;
-                history.replace("/")
+                history.replace("/profile")
             }
         }catch(err){
             btn.disabled=false;
@@ -63,7 +63,9 @@ const Login=()=>{
             
            
             if(get.docs.length>0){
-               history.replace("/");
+                await default_buy();
+
+               history.replace("/profile");
             }else{
                 set_alerte("Cette adresse email n'existe pas");
                 await auth.currentUser.delete();
@@ -79,6 +81,36 @@ const Login=()=>{
             set_progress(false);
             set_alerte(err.message)
         })
+    }
+
+    const default_buy=async ()=>{
+        const email=auth?.currentUser.email;
+        const res=await db.collection("users").where("email","==",email).get();
+        const key=res.docs[0].id;
+        // default course id=5
+        const res2=await db.collection("achats").where("user","==",key).get();
+        const all_courses=[];
+        res2.docs.map((doc)=>{
+            const formation=doc.data().formation;
+            all_courses.push(parseInt(formation));
+        })
+        if(all_courses.indexOf(5)<0){
+            await db.collection("achats").add({
+                user:key,
+                date:firebase.firestore.FieldValue.serverTimestamp(),
+                code:"123456",
+                formation:"5"
+            })
+        }
+
+        if(all_courses.indexOf(6)<0){
+            await db.collection("achats").add({
+                user:key,
+                date:firebase.firestore.FieldValue.serverTimestamp(),
+                code:"123456",
+                formation:"6"
+            })
+        }
     }
     return(
         <div className="login">
