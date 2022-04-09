@@ -56,7 +56,7 @@ const MesFormations=({click})=>{
                 </div>
                 <button onClick={e=>set_open(true)}>
                     <AddIcon style={{fontSize:"1.2rem"}} />
-                    Ajouter une formation</button>
+                    <span>Ajouter une formation</span></button>
             </div>
 
             <div className="content">
