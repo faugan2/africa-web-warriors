@@ -3,7 +3,8 @@
         width:80vw;
         >div{
             
-            flex-direction: column;
+            display:grid;
+            grid-template-columns:50% 50%;
             
             >div{
                 margin-bottom: 2rem;

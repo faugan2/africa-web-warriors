@@ -1,15 +1,17 @@
 .books{
     
-    width:700px;
+    width:100%;
     margin:auto;
     display:flex;
     flex-direction: column;
     >h1{
         color:indianred;
+        margin:0;
     }
     >div{
         cursor: pointer;
-        display:flex;
+        display:grid;
+        grid-template-columns:25% 25% 25% 25%;
         gap:1rem;    
         >div{
             flex:1;
@@ -33,6 +35,7 @@
     >button{
         cursor: pointer;
         margin-top: 1rem;
+        display:none;
         >p{
             &:nth-child(3){
                 font-weight: bold;
