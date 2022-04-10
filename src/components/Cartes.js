@@ -55,7 +55,8 @@ const Cartes=()=>{
     return(
         <div className="cartes">
 
-            <h1>Nos formations de bases</h1>
+        
+
 
             {
                 data?.map((item,i)=>{
@@ -75,7 +76,7 @@ const Cartes=()=>{
                                 <img src={item.photo} />
                                 <div>
                                     <h2>{item.titre}</h2>
-                                    <div dangerouslySetInnerHTML={{__html:item.description}} />
+                                    <div dangerouslySetInnerHTML={{__html:item.description.substring(0,100)+" ..."}} />
                                     <p className="tech">
                                         <span>Technologies: </span>
                                         {item.tech}</p>
