@@ -18,7 +18,7 @@ const data=[
         Python est l’un des langages de programmation les plus utilisés. 
         Apprendre à coder avec Python est une compétence très recherchée dans beaucoup de métiers. 
         Et pas uniquement pour les développeurs logiciels à temps plein. Tout le monde peut apprendre !`,
-        tech:"A2W Plateforme",
+        tech:"Python",
         delai:"8 heures",
         cout:"Gratuit",
         bonus:"",
@@ -28,7 +28,6 @@ const data=[
         id:"1",
         titre:"Création des applications web",
         description:`Vous souhaitez maîtriser la programmation web et devenir un as du langage informatique ? 
-        <br /><br />
         Obtenez votre qualification d'intégrateur web pour travailler en freelance, 
         en agence ou en entreprise. <br /><br />
         Réalisez votre formation à distance, à votre rythme. 
