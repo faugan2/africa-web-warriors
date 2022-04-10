@@ -24,6 +24,8 @@
         padding-bottom: 3rem;
         position:relative;
         border-radius: 5px;
+       
+        
 
         &:hover{
             opacity: 0.6;
@@ -37,63 +39,71 @@
         
         >div{
             text-align: left;
-            
+            min-height:250px;
             >h2{
                 font-size: 1.1rem;
             }
+            
             >div{
                 font-size: 0.8rem;
-            }
-            >p{
-                margin:0;
-                font-size:0.8rem;
+               
+            
+                &.info{
+                    position:absolute;
+                    bottom:0.2rem;
+                    >p{
+                        margin:0;
+                        font-size:0.8rem;
+        
+                        &.tech{
+                            margin-top: 1rem;
+                            font-size:0.8rem;
+                            >span{
+                                font-weight: bold;
+                            }
+                        }
+                        &.delai{
+                            font-size:0.8rem;
+                            margin-top: 0.5rem;
+                            >span{
+                                font-weight: bold;
+                            }
+                        }
+                        &.prix{
+                            font-size:0.8rem;
+                            margin-top: 0.5rem;
+                            >span{
+                                font-weight: bold;
+                            }
+                        }
+                        &.bonus{
+                            font-size:0.8rem;
+                            margin-top: 0.5rem;
+                            >span{
+                                font-weight: bold;
+                            }
+                        }
+                    }
 
-                &.tech{
-                    margin-top: 1rem;
-                    font-size:0.8rem;
-                    >span{
+                    >button{
+                        padding:0.5rem 1rem;
+                        border:none;
+                        background-color:indianred;
+                        color:white;
                         font-weight: bold;
-                    }
-                }
-                &.delai{
-                    font-size:0.8rem;
-                    margin-top: 0.5rem;
-                    >span{
-                        font-weight: bold;
-                    }
-                }
-                &.prix{
-                    font-size:0.8rem;
-                    margin-top: 0.5rem;
-                    >span{
-                        font-weight: bold;
-                    }
-                }
-                &.bonus{
-                    font-size:0.8rem;
-                    margin-top: 0.5rem;
-                    >span{
-                        font-weight: bold;
+                        margin-top: 0.5rem;
+                        cursor: pointer;
+                        font-size:0.8rem;
+                        
+                        &.buy{
+                            background-color:green;
+                        }
                     }
                 }
             }
+            
 
-            >button{
-                padding:0.5rem 1rem;
-                border:none;
-                background-color:indianred;
-                color:white;
-                font-weight: bold;
-                margin-top: 0.5rem;
-                cursor: pointer;
-                position:absolute;
-                bottom:0.2rem;
-                font-size:0.8rem;
-                
-                &.buy{
-                    background-color:green;
-                }
-            }
+            
         }
         
     }

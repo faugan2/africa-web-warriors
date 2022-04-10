@@ -77,19 +77,22 @@ const Cartes=()=>{
                                 <div>
                                     <h2>{item.titre}</h2>
                                     <div dangerouslySetInnerHTML={{__html:item.description.substring(0,100)+" ..."}} />
-                                    <p className="tech">
-                                        <span>Technologies: </span>
-                                        {item.tech}</p>
-                                    <p className="delai"><span>Delai:</span> {item.delai}</p>
-                                    <p className="prix"><span>Coût:</span> {item.cout}</p>
-                                    {item.bonus !="" &&
-                                    <p className="bonus"><span>Bonus: </span> {item.bonus}</p>}
-                                    <button 
-                                        className={`btn_start ${b}`} 
-                                        onClick={detail_formation.bind(this,b,item)}
-                                    >
-                                    Commencez la formation
-                                    </button>
+                                    <div className="info">
+                                        <p className="tech">
+                                            <span>Technologies: </span>
+                                            {item.tech}</p>
+                                        <p className="delai"><span>Delai:</span> {item.delai}</p>
+                                        <p className="prix"><span>Coût:</span> {item.cout}</p>
+                                        {item.bonus !="" &&
+                                        <p className="bonus"><span>Bonus: </span> {item.bonus}</p>}
+                                        <button 
+                                            className={`btn_start ${b}`} 
+                                            onClick={detail_formation.bind(this,b,item)}
+                                        >
+                                        Commencez la formation
+                                        </button>
+                                    </div>
+                                    
                                 </div>
                             </div>
                     )

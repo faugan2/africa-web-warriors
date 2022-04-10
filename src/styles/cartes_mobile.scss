@@ -21,50 +21,53 @@
             }
             >div{
                 text-align: left;
-                >p{
-                    margin:0;
-                    font-size: 0.8rem;
-                    text-align:justify;
-                    
-                    &.tech{
-                        margin-top: 1rem;
+                &.info{
+                    >p{
+                        margin:0;
                         font-size: 0.8rem;
-                        >span{
-                            font-weight: bold;
+                        text-align:justify;
+                        
+                        &.tech{
+                            margin-top: 1rem;
+                            font-size: 0.8rem;
+                            >span{
+                                font-weight: bold;
+                            }
+                        }
+                        &.delai{
+                            font-size: 0.8rem;
+                            >span{
+                                font-weight: bold;
+                            }
+                        }
+                        &.prix{
+                            font-size: 0.8rem;
+                            >span{
+                                font-weight: bold;
+                            }
+                        }
+                        &.bonus{
+                            font-size: 0.8rem;
+                            >span{
+                                font-weight: bold;
+                            }
                         }
                     }
-                    &.delai{
-                        font-size: 0.8rem;
-                        >span{
-                            font-weight: bold;
-                        }
-                    }
-                    &.prix{
-                        font-size: 0.8rem;
-                        >span{
-                            font-weight: bold;
-                        }
-                    }
-                    &.bonus{
-                        font-size: 0.8rem;
-                        >span{
-                            font-weight: bold;
-                        }
+        
+                    >button{
+                        padding:0.5rem 1rem;
+                        border:none;
+                        background-color:indianred;
+                        color:white;
+                        font-weight: bold;
+                        margin:auto;
+                        margin-left: 9%;
+                        margin-top: 0.5rem;
+                        cursor: pointer;
+                        width:80%;
                     }
                 }
-    
-                >button{
-                    padding:0.5rem 1rem;
-                    border:none;
-                    background-color:indianred;
-                    color:white;
-                    font-weight: bold;
-                    margin:auto;
-                    margin-left: 9%;
-                    margin-top: 0.5rem;
-                    cursor: pointer;
-                    width:80%;
-                }
+                
             }
             
         }

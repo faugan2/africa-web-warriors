@@ -1,5 +1,30 @@
 const data=[
     {
+        id:"5",
+        titre:"Prise en main de A2W Academie",
+        description:`Voici une courte formation sur comment utiliser la plateforme pour apprendre 
+         et valider vos connaissances`,
+        tech:"A2W Plateforme",
+        delai:"15 min",
+        cout:"Gratuit",
+        bonus:"",
+        photo:"https://firebasestorage.googleapis.com/v0/b/africa-web-warriors.appspot.com/o/images%2FWhatsApp%20Image%202022-04-05%20at%2017.01.03(1).jpeg?alt=media&token=10a8c0d0-d83e-4baf-97b2-7b3e5c9eb462"
+    },
+    {
+        id:"6",
+        titre:"Les bases de la programmation avec Python",
+        description:`ous avez beaucoup de tâches fastidieuses et répétitives au travail ? 
+        Vous voulez être capable de faire des choses plus efficacement ? Python peut vous aider !<br /><br />
+        Python est l’un des langages de programmation les plus utilisés. 
+        Apprendre à coder avec Python est une compétence très recherchée dans beaucoup de métiers. 
+        Et pas uniquement pour les développeurs logiciels à temps plein. Tout le monde peut apprendre !`,
+        tech:"A2W Plateforme",
+        delai:"8 heures",
+        cout:"Gratuit",
+        bonus:"",
+        photo:"https://firebasestorage.googleapis.com/v0/b/africa-web-warriors.appspot.com/o/images%2Fpath_518.avif?alt=media&token=c861f590-78e7-44ea-80c1-1fc4124c7ee0"
+    },
+    {
         id:"1",
         titre:"Création des applications web",
         description:`Vous souhaitez maîtriser la programmation web et devenir un as du langage informatique ? 
@@ -66,32 +91,6 @@ const data=[
         cout:"150 000 FCFA",
         bonus:"",
         photo:"https://firebasestorage.googleapis.com/v0/b/africa-web-warriors.appspot.com/o/images%2Fethical_hacking.jpeg?alt=media&token=38fe87fd-bc72-4362-8606-ae9ca9387311"
-    },
-    {
-        id:"5",
-        titre:"Prise en main de A2W Academie",
-        description:`Voici une courte formation sur comment utiliser la plateforme pour apprendre 
-         et valider vos connaissances`,
-        tech:"A2W Plateforme",
-        delai:"15min",
-        cout:"Gratuit",
-        bonus:"",
-        photo:"https://firebasestorage.googleapis.com/v0/b/africa-web-warriors.appspot.com/o/images%2FWhatsApp%20Image%202022-04-05%20at%2017.01.03(1).jpeg?alt=media&token=10a8c0d0-d83e-4baf-97b2-7b3e5c9eb462"
-    },
-    {
-        id:"6",
-        titre:"Les bases de la programmation avec Python",
-        description:`ous avez beaucoup de tâches fastidieuses et répétitives au travail ? 
-        Vous voulez être capable de faire des choses plus efficacement ? Python peut vous aider !<br /><br />
-
-        Python est l’un des langages de programmation les plus utilisés. 
-        Apprendre à coder avec Python est une compétence très recherchée dans beaucoup de métiers. 
-        Et pas uniquement pour les développeurs logiciels à temps plein. Tout le monde peut apprendre !`,
-        tech:"A2W Plateforme",
-        delai:"8 heures",
-        cout:"Gratuit",
-        bonus:"",
-        photo:"https://firebasestorage.googleapis.com/v0/b/africa-web-warriors.appspot.com/o/images%2Fpath_518.avif?alt=media&token=c861f590-78e7-44ea-80c1-1fc4124c7ee0"
     }
 ]
 
