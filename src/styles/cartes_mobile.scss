@@ -1,7 +1,7 @@
 @media only screen and (max-width: 768px) {
     .cartes{
-        display:grid;
-        grid-template-columns: 50% 50%;
+        display:flex;
+        
         flex-direction: column;
         margin-top: 1rem;
         margin-bottom: 2rem;
