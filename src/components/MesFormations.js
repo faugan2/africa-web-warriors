@@ -11,6 +11,7 @@ import {useSelector} from "react-redux";
 import {selectAchats,selectUser} from "../features/appSlice";
 import {data as formations} from "./formations";
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+
 const MesFormations=({click})=>{
     const achats=useSelector(selectAchats);
     const me=useSelector(selectUser);
@@ -46,6 +47,8 @@ const MesFormations=({click})=>{
     const close_modal_code=()=>{
         set_open_code(false);
     }
+
+    
     return(
         <div className="mes_formations">
             <h1>Mes formations</h1>
