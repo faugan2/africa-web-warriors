@@ -71,17 +71,17 @@ const HomeContent=()=>{
                         <div>
                             <button>
                                 <img src={programmation} />
-                                <h4>Programmation</h4>
-                                <p>C, Python, Technologies web</p>
+                                <h4>Programmation (C, Python, Technologies web, etch...)</h4>
+                                
                             </button>
 
                             <button>
                                 <img src={linux} />
-                                <h4>Système</h4>
-                                <p>Linux</p>
+                                <h4>Système (Linux)</h4>
+                                {/*<p>Linux</p>*/}
                             </button>
 
-                            <button>
+                            <button style={{display:"none"}}>
                                 <img src={helpdesk} />
                                 <h4>Help-Desk</h4>
                                 <p>Comptia A+</p>
@@ -90,25 +90,25 @@ const HomeContent=()=>{
                             <button>
                                 <img src={security} />
                                 <h4>Security</h4>
-                                <p>Security+</p>
+                                {/*<p>Security+</p>*/}
                             </button>
 
                             <button>
                                 <img src={networking} />
                                 <h4>Networking</h4>
-                                <p>CCNA</p>
+                                {/*<p>CCNA</p>*/}
                             </button>
 
                             <button>
                                 <img src={cloud} />
                                 <h4>Cloud</h4>
-                                <p>AWS Cloud Practitioner</p>
+                                {/*<p>AWS Cloud Practitioner</p>*/}
                             </button>
 
                             <button>
                                 <img src={ethical_hacking} />
                                 <h4>Ethical Hacking</h4>
-                                <p>Pentest+</p>
+                                {/*<p>Pentest+</p>*/}
                             </button>
 
 
