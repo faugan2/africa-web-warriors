@@ -32,14 +32,14 @@ const Footer=()=>{
             <div>
                        
                 <h1>Canada</h1>
-                <p>2325 Hurontario Street Suite 315 Mississauga ON L5A 4K4</p>
+                <p style={{marginTop:"1rem"}}>2325 Hurontario Street Suite 315 Mississauga ON L5A 4K4</p>
                 <p><PhoneIcon /> <span>647 243 5111</span></p>
             </div>
 
             <div>
                        
                        <h1>Togo</h1>
-                       <p>Lomé - Togo</p>
+                       <p  style={{marginTop:"1rem"}}>Lomé - Togo</p>
                        <p><PhoneIcon /> <span>+228 92 95 08 03</span></p>
                    </div>
 
