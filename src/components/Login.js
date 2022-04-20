@@ -9,6 +9,7 @@ import {useHistory} from "react-router-dom";
 const Login=({click})=>{
     const [progress,set_progress]=useState(false);
     const [alerte,set_alerte]=useState("");
+
     const history=useHistory();
     const register=async (e)=>{
         var provider = new firebase.auth.GoogleAuthProvider();
@@ -37,6 +38,8 @@ const Login=({click})=>{
                     date:firebase.firestore.FieldValue.serverTimestamp(),
                     username:res.user.displayName,
                 })
+
+                await default_buy();
                 
                 btn.disabled=false;
                 history.replace("/profile")

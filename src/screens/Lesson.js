@@ -14,17 +14,18 @@ import LessonQuiz from "../components/LessonQuiz";
 import LessonTask from "../components/LessonTask";
 import LessonNote from "../components/LessonNote";
 
+import Timer from "../components/Timer";
 
 const Lesson=()=>{
     const history=useHistory();
     const [page,set_page]=useState(0);
 
     useEffect(()=>{
-        const btns=document.querySelectorAll(".right>.top>button");
+        /*const btns=document.querySelectorAll(".right>.top>button");
         for(var i=0; i<btns.length; i++){
             btns[i].classList.remove("active");
         }
-        btns[page].classList.add("active");
+        btns[page].classList.add("active");*/
     },[page]);
 
     const change_content=(index)=>{
@@ -32,14 +33,14 @@ const Lesson=()=>{
     }
 
     const chapter_clicked=(module,index)=>{
-       const id=`${module}${index}`;
+       /*const id=`${module}${index}`;
 
         const el=document.querySelectorAll('.chapter');
         
         for(var i=0; i<el.length; i++){
             el[i].classList.remove("active");
         }
-        document.querySelector("#"+id).classList.add("active");
+        document.querySelector("#"+id).classList.add("active");*/
         
     }
 
@@ -79,6 +80,23 @@ const Lesson=()=>{
             ]
         }
     ];
+
+    const time = new Date(2022,4,2,23,59,0,0);
+
+    return(
+        <div className="lesson">
+            <Nav />
+            <div className="lesson_content" style={{
+            display:"flex",
+            flexDirection:"column",
+            alignItems:"center",
+            justifyContent:"center",
+            }}>
+                <h1>La formation débute dans : </h1>
+                <Timer expiryTimestamp={time} autoStart={true}  />
+            </div>
+        </div>
+    )
     return(
         <div className="lesson">
             <Nav />

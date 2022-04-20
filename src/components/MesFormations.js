@@ -62,9 +62,9 @@ const MesFormations=({click})=>{
             <div className="content">
                 {(data==null || data?.length==0) && <div className="no_data">
                     <img src={no_data} />
-                    <p>Vous n'avez ajouté aucune formation. 
-                    <br />Cliquez sur le button ci-dessous pour ajouter une formation.</p>
-                    <button onClick={e=>set_open(true)}>Ajouter une formation</button>
+                    <p>Vous n'avez ajouté aucune formation. </p>
+                    {/*<br />Cliquez sur le button ci-dessous pour ajouter une formation.</p>
+                    <button onClick={e=>set_open(true)}>Ajouter une formation</button>*/}
                 </div>
                 }
 

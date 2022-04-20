@@ -24,7 +24,7 @@ import { selectUser } from "../features/appSlice";
 import {useSelector} from "react-redux";
 import Cartes from "./Cartes";
 import Books from "./Books";
-
+import Timer from "./Timer";
 const HomeContent=()=>{
     const history=useHistory();
     const [open,set_open]=useState(false);
@@ -43,16 +43,20 @@ const HomeContent=()=>{
             history.push("/profile");
         }
     }
+
+   const time= new Date(2022,4,2,23,59,0,0)
+
     return(
         <div className="home_content">
            <div className="top">
                <div className="left">
                    <h1>AFRICA WEB WARRIORS</h1>
                    <ol>
+                        <li><strong className="cle">Faites-vous former</strong> en sécurité informatique (cybersécurité).</li>
                        <li><strong className="cle">Sécurisez</strong> votre 
                         <strong className="cle"> réseau informatique</strong> et les applications qui s'y trouvent,</li>
                        <li><strong className="cle">Concevez</strong> et <strong className="cle">réalisez</strong> vos idées d'applications ou logicielles (web, mobile, desktop, etc...),</li>
-                       <li><strong className="cle">Faites-vous former</strong> en sécurité informatique (cybersécurité).</li>
+                       
                    </ol>
 
                    <div>
@@ -61,7 +65,9 @@ const HomeContent=()=>{
                                me==null ? "Inscrivez-vous aujourd'hui" : "Commencez la formation"
                            }
                            </button>
+                           
                    </div>
+                   <Timer expiryTimestamp={time} autoStart={true} />
                </div>
                <div className="right">
                 <ReactPlayer url='https://www.youtube.com/watch?v=_1K7mtAMACE' width={500} height={300} />
@@ -71,7 +77,7 @@ const HomeContent=()=>{
             <div className="services">
                 <div>
                     <SchoolIcon style={{fontSize:"4rem"}}/>
-                    <h2>Accademie</h2>
+                    <h2>Academie</h2>
                     <p>
                         Devenez <strong>professionnel de la cybersécurité</strong> pour être capable de protéger le réseau d'une entreprise.  
                         <strong> A2W</strong> vous propose une formation pour vous permettre  d'acquérir les connaissances nécessaires pour faire 

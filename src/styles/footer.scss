@@ -1,10 +1,11 @@
 .footer{
    
-    background-color: #ccc;
+    background-color: #3a3a3a;
     
     width: 100%;
     display:flex;
     justify-content: space-between;
+    color:white;
 
     >div{
         margin:2rem;
@@ -15,7 +16,7 @@
             font-size: 1.5rem;
             margin-top: 0;
             margin-bottom: 0;
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid white;
         }
         >ol{
             margin:0;
@@ -28,7 +29,7 @@
                 >a{
                     font-size: 0.8rem;
                     text-decoration: none;
-                    color:black;
+                    color:white;
                     &:hover{
                         text-decoration: underline;
                     }
@@ -72,8 +73,9 @@
                 align-items: center;
                 >a{
                     flex:1;
-                    color:black;
+                    color:indianred;
                 }
+
             }
 
             &.contacts{
