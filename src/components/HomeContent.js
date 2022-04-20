@@ -105,7 +105,7 @@ const HomeContent=()=>{
             </div>
 
             <div className="formations" style={{width:"80vw",margin:"auto"}}>
-                <h1 style={{color:"indianred",borderTop:"1px solid silver",padding:0,margin:0,marginTop:"1rem",paddingTop:"1rem"}}>Nos formations</h1>
+                <h1 style={{color:"black",borderTop:"1px solid silver",padding:0,margin:0,marginTop:"1rem",paddingTop:"1rem"}}>Nos formations</h1>
                 <Cartes />
                 <Books />
             </div>            

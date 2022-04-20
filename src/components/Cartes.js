@@ -72,11 +72,13 @@ const Cartes=()=>{
                   
                    //console.log("the result is ",mes_achats);
                     return(
-                        <div>
+                        <div  onClick={detail_formation.bind(this,b,item)}>
                                 <img src={item.photo} />
                                 <div>
                                     <h2>{item.titre}</h2>
-                                    <div dangerouslySetInnerHTML={{__html:item.description.substring(0,100)+" ..."}} />
+                                    <div 
+                                    style={{display:"none"}}
+                                    dangerouslySetInnerHTML={{__html:item.description.substring(0,100)+" ..."}} />
                                     <div className="info">
                                         <p className="tech">
                                             <span>Technologies: </span>
@@ -86,6 +88,7 @@ const Cartes=()=>{
                                         {item.bonus !="" &&
                                         <p className="bonus"><span>Bonus: </span> {item.bonus}</p>}
                                         <button 
+                                            style={{display:"none"}}
                                             className={`btn_start ${b}`} 
                                             onClick={detail_formation.bind(this,b,item)}
                                         >
