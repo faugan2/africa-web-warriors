@@ -6,8 +6,17 @@ import module2 from "./img/2.jpg";
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 const Books=()=>{
 
-    const contact_whatsap=()=>{
-        window.location.href=`https://wa.me/22892950803`;
+    const contact_whatsap=(title,tech)=>{
+        const message=`Bonjour,
+        Je suis interressé par le livre:
+        *${title}*
+        Avec les technologies suivantes:
+        *${tech}*
+
+        J'aimerai en savoir plus.
+        `
+       
+        window.location.href=`https://wa.me/22892950803?text=${message}`;
     }
     return(
         <div className="books">
@@ -17,7 +26,7 @@ const Books=()=>{
                 books.map((item,i)=>{
 
                     return(
-                        <div key={i} onClick={contact_whatsap}>
+                        <div key={i} onClick={contact_whatsap.bind(this,item.titre,item.tech)}>
                             {i==0 && <img src={module1} />}
                             {i==1 && <img src={module2} />}
                             <p>{item.cout}</p>
